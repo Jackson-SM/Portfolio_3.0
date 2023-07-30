@@ -1,17 +1,24 @@
 import React from "react";
-import { LiaLaptopCodeSolid } from "react-icons/lia";
 import * as Styled from "./styles";
+import svgIllustration from "../../assets/hero_dev.svg";
+import { CarouselTechs } from "../CarouselTechs";
+import langs_stacks from "../CarouselTechs/langs_stacks";
+import libs_frameworks from "../CarouselTechs/libs_frameworks";
 
 export const SectionHero = () => {
   return (
     <Styled.SectionHero>
-      <div>
-        <LiaLaptopCodeSolid />
+      <Styled.ContainerAboutMe>
+        <Styled.ImageIllustration src={svgIllustration} alt="" />
         <Styled.TitleHero>Olá, eu sou Jackson Magalhães.</Styled.TitleHero>
         <Styled.DescriptionHero>
           Sou um desenvolvedor Full-Stack.
         </Styled.DescriptionHero>
-      </div>
+      </Styled.ContainerAboutMe>
+      <Styled.ContainerSkills>
+        <CarouselTechs stack={langs_stacks} />
+        <CarouselTechs direction="down" stack={libs_frameworks} />
+      </Styled.ContainerSkills>
     </Styled.SectionHero>
   );
 };

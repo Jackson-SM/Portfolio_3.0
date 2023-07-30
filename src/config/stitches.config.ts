@@ -7,15 +7,15 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
         primary: "hsla(153, 100%, 50%, 1)",
         primaryLight: "hsla(153, 100%, 67%, 1)",
 
-        secundary: "hsla(192, 100%, 57%, 1)",
-        secundaryLight: "hsla(192, 100%, 73%, 1)",
+        secondary: "hsla(192, 100%, 57%, 1)",
+        secondaryLight: "hsla(192, 100%, 73%, 1)",
 
         tertiary: "hsla(281, 100%, 56%, 1)",
         tertiaryLight: "hsla(281, 100%, 74%, 1)",
 
         background: "hsl(0, 0%, 5%)",
-        backgroundLight2: "hsl(0, 0%, 10%)",
-        backgroundLight: "hsl(0, 0%, 15%)",
+        backgroundLight: "hsl(0, 0%, 10%)",
+        backgroundLight2: "hsl(0, 0%, 20%)",
 
         backgroundTransparence: "hsl(0, 0%, 15%, 0.9)",
         backgroundTransparence2: "hsl(0, 0%, 15%, 0.5)",
