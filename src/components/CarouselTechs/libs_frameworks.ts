@@ -1,14 +1,14 @@
 import adonisjs from "@/assets/icons-libs-frameworks/adonisjs.svg";
 import bootstrap from "@/assets/icons-libs-frameworks/bootstrap.svg";
 import express from "@/assets/icons-libs-frameworks/express.svg";
-import jest from "@/assets/icons-libs-frameworks/jest.svg";
-import jquery from "@/assets/icons-libs-frameworks/jquery.svg";
+//import jest from "@/assets/icons-libs-frameworks/jest.svg";
+//import jquery from "@/assets/icons-libs-frameworks/jquery.svg";
 import nestjs from "@/assets/icons-libs-frameworks/nestjs.svg";
 import nextjs from "@/assets/icons-libs-frameworks/nextjs.svg";
 import prisma from "@/assets/icons-libs-frameworks/prisma.svg";
 import react from "@/assets/icons-libs-frameworks/react.svg";
 import supabase from "@/assets/icons-libs-frameworks/supabase.svg";
-import trello from "@/assets/icons-libs-frameworks/trello.svg";
+//import trello from "@/assets/icons-libs-frameworks/trello.svg";
 import tailwindcss from "@/assets/icons-libs-frameworks/tailwindcss.svg";
 
 export default [

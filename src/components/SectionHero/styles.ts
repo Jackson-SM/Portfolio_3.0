@@ -7,7 +7,7 @@ export const SectionHero = styled("section", {
   justifyContent: "space-around",
 
   backgroundImage:
-    "radial-gradient(circle at top left,rgba(0, 255, 164, 0.25), $background), radial-gradient(circle at bottom right,rgba(100, 15, 164, 0.25), $background)",
+    "radial-gradient(circle at 0% 100%,rgba(0, 255, 164, 0.15) 1%, $background 50%)",
 
   padding: 20,
   paddingTop: "80px",

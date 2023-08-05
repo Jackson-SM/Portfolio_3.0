@@ -1,20 +1,4 @@
-import { keyframes, styled } from "@/config/stitches.config";
-
-const toGetUp = keyframes({
-  "0%": { translate: "0 0" },
-  "50%": { translate: "0 -5%" },
-  "100%": { translate: "0 5%" },
-});
-const toGetDown = keyframes({
-  "0%": { translate: "0 0" },
-  "50%": { translate: "0 -5%" },
-  "100%": { translate: "0 5%" },
-});
-const toGetRandom = keyframes({
-  "0%": { translate: "0 0" },
-  "50%": { translate: "0 -5%" },
-  "100%": { translate: "0 5%" },
-});
+import { styled } from "@/config/stitches.config";
 
 export const CarouselItems = styled("div", {
   display: "flex",
@@ -29,24 +13,23 @@ export const CarouselItems = styled("div", {
   "& img": {
     width: "45px",
     height: "45px",
+
+    filter: "grayscale(100%)",
+
+    transition: "filter,transform ease 230ms",
+
+    cursor: "pointer",
+
+    margin: 5,
+
+    "&:hover": {
+      filter: "grayscale(0%)",
+      transform: "scale(1.05)",
+    },
   },
 
   defaultVariants: {
     direction: "up",
-  },
-
-  variants: {
-    direction: {
-      up: {
-        animation: `${toGetUp} 4s ease-in-out infinite alternate`,
-      },
-      down: {
-        animation: `${toGetDown} 4s ease-in-out infinite alternate`,
-      },
-      random: {
-        animation: `${toGetRandom} 4s ease-in-out infinite alternate`,
-      },
-    },
   },
 });
 
@@ -56,16 +39,19 @@ export const CarouselTechs = styled("div", {
   position: "relative",
   zIndex: 1,
 
-  borderRadius: "5px",
   background: "$backgroundTransparence2",
-  border: "1px solid $backgroundLight2",
+  boxShadow: "0px 0px 60px 10px rgba(255, 255, 255, 0.1)",
+
+  border: "2px transparent",
+  borderRadius: "5px",
+  backgroundImage:
+    "linear-gradient($backgroundLight, $backgroundLight), radial-gradient(circle at top left, $primary, $tertiary)",
+  backgroundOrigin: "border-box",
+  backgroundClip: "content-box, border-box",
 
   backdropFilter: "blur(5px)",
 
   transition: "all 0.3s ease-in-out",
-
-  "&:hover": {
-    border: "1px solid $primaryLight",
-  },
-  padding: 10,
+  padding: 2,
+  margin: 5,
 });

@@ -17,7 +17,7 @@ export const SectionHero = () => {
       </Styled.ContainerAboutMe>
       <Styled.ContainerSkills>
         <CarouselTechs stack={langs_stacks} />
-        <CarouselTechs direction="down" stack={libs_frameworks} />
+        <CarouselTechs stack={libs_frameworks} />
       </Styled.ContainerSkills>
     </Styled.SectionHero>
   );
