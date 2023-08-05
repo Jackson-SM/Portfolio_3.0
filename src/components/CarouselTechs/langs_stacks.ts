@@ -5,11 +5,16 @@ import python from "@/assets/icons-langs/python.svg";
 import rust from "@/assets/icons-langs/rust.svg";
 import javascript from "@/assets/icons-langs/javascript.svg";
 import typescript from "@/assets/icons-langs/typescript.svg";
+import nodejs from "@/assets/icons-langs/nodejs.svg";
 
 export default [
   {
     name: "C#",
     icon: csharp,
+  },
+  {
+    name: "NodeJS",
+    icon: nodejs,
   },
   {
     name: "Java",
