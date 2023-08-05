@@ -11,6 +11,11 @@ export const SectionHero = styled("section", {
 
   padding: 20,
   paddingTop: "80px",
+
+  "@large": {
+    flexDirection: "column",
+    alignItems: "center",
+  },
 });
 
 export const ContainerAboutMe = styled("div", {
@@ -41,11 +46,33 @@ export const DescriptionHero = styled("p", {
 
 export const ContainerSkills = styled("div", {
   display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  flexDirection: "column",
+
   gap: 30,
   position: "relative",
   zIndex: 1,
 
-  padding: 10,
+  padding: 2,
+  height: "25%",
+  margin: "auto 0",
+  width: "50%",
+
+  border: "2px transparent",
+  borderRadius: "5px",
+  backgroundImage:
+    "linear-gradient($backgroundLight, $backgroundLight), radial-gradient(circle at top left, $primary, $tertiary)",
+  backgroundOrigin: "border-box",
+  backgroundClip: "content-box, border-box",
+
+  "@largex": {
+    width: "700px",
+  },
+
+  "@large": {
+    width: "100%",
+  },
 
   "&::before": {
     content: "",

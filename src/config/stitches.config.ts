@@ -45,7 +45,10 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
       }),
     },
     media: {
-      large: "(max-width: 900px)",
+      large: "(max-width: 1200px)",
+      largex: "(max-width: 1366px)",
+      largexx: "(max-width: 1600px)",
+      largexxx: "(max-width: 1920px)",
       medium: "(max-width: 750px)",
       small: "(max-width: 400px)",
     },

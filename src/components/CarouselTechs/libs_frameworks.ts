@@ -9,7 +9,7 @@ import prisma from "@/assets/icons-libs-frameworks/prisma.svg";
 import react from "@/assets/icons-libs-frameworks/react.svg";
 import supabase from "@/assets/icons-libs-frameworks/supabase.svg";
 //import trello from "@/assets/icons-libs-frameworks/trello.svg";
-import tailwindcss from "@/assets/icons-libs-frameworks/tailwindcss.svg";
+//import tailwindcss from "@/assets/icons-libs-frameworks/tailwindcss.svg";
 
 export default [
   { name: "AdonisJS", icon: adonisjs },
@@ -22,6 +22,6 @@ export default [
   { name: "Prisma", icon: prisma, color: "#ff80fb" },
   { name: "ReactJS", icon: react },
   { name: "Supabase", icon: supabase },
-  { name: "TailwindCSS", icon: tailwindcss, width: 50, height: 50 },
+  //{ name: "TailwindCSS", icon: tailwindcss, width: 50, height: 50 },
   //{ name: "Trello", icon: trello },
 ];

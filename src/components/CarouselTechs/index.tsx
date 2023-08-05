@@ -1,6 +1,6 @@
 import React from "react";
 import * as Styled from "./styles";
-import Image from "next/image";
+import { ImageStack } from "../ImagesStack";
 
 type StackProps = {
   name: string;
@@ -23,7 +23,7 @@ export const CarouselTechs = ({
       <Styled.CarouselItems {...props}>
         {stack.map((item) => {
           return (
-            <Image
+            <ImageStack
               src={item.icon}
               key={item.name}
               style={{
@@ -32,7 +32,7 @@ export const CarouselTechs = ({
                 height: `${item.height}px`,
               }}
               alt=""
-            ></Image>
+            ></ImageStack>
           );
         })}
       </Styled.CarouselItems>
