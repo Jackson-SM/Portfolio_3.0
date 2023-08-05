@@ -22,6 +22,10 @@ export const ImageStack = styled(Image, {
     height: "65px",
   },
 
+  "@largex": {
+    padding: "5px",
+  },
+
   "&:hover": {
     filter: "grayscale(0%)",
     transform: "scale(1.05)",
