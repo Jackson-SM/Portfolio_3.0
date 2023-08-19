@@ -1,4 +1,5 @@
-import { styled } from "@/config/stitches.config";
+import { styled, theme } from "@/config/stitches.config";
+import { lighten, transparentize } from "polished";
 
 export const CarouselItems = styled("div", {
   display: "flex",
@@ -27,8 +28,11 @@ export const CarouselTechs = styled("div", {
   width: "100%",
   height: "100%",
 
-  background: "$backgroundTransparence2",
-  boxShadow: "0px 0px 60px 10px rgba(255, 255, 255, 0.1)",
+  background: `${transparentize(0.5, `${theme.colors.background.value}`)}`,
+  boxShadow: `0px 0px 60px 10px ${lighten(
+    0.2,
+    `${theme.colors.background.value}`,
+  )}`,
 
   backdropFilter: "blur(5px)",
 

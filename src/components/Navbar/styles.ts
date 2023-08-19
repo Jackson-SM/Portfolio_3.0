@@ -1,9 +1,13 @@
-import { styled } from "@/config/stitches.config";
+import { styled, theme } from "@/config/stitches.config";
+import { lighten, transparentize } from "polished";
 
 export const Navbar = styled("nav", {
   height: "80px",
 
-  background: "$backgroundTransparence2",
+  background: `${transparentize(
+    0.8,
+    lighten(0.2, `${theme.colors.background.value}`),
+  )}`,
 
   display: "flex",
   justifyContent: "space-between",
@@ -16,5 +20,4 @@ export const Navbar = styled("nav", {
   position: "fixed",
   backdropFilter: "blur(5px)",
   width: "100%",
-  borderBottom: "1px solid $backgroundLight2",
 });

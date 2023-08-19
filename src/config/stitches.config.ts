@@ -4,22 +4,13 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
   createStitches({
     theme: {
       colors: {
-        primary: "hsla(153, 100%, 50%, 1)",
-        primaryLight: "hsla(153, 100%, 67%, 1)",
+        primary: "#03b1fc",
 
-        secondary: "hsla(192, 100%, 57%, 1)",
-        secondaryLight: "hsla(192, 100%, 73%, 1)",
+        secondary: "#24d3ff",
 
-        tertiary: "hsla(281, 100%, 56%, 1)",
-        tertiaryLight: "hsla(281, 100%, 74%, 1)",
+        tertiary: "#b81fff",
 
-        background: "hsl(0, 0%, 5%)",
-        backgroundLight: "hsl(0, 0%, 10%)",
-        backgroundLight2: "hsl(0, 0%, 20%)",
-
-        backgroundTransparence: "hsl(0, 0%, 15%, 0.9)",
-        backgroundTransparence2: "hsl(0, 0%, 15%, 0.5)",
-        backgroundTransparence3: "hsl(0, 0%, 15%, 0.3)",
+        background: "#0d0d0d",
 
         text: "hsl(0, 0%, 95%)",
         textDark: "hsl(0, 0%, 70%)",

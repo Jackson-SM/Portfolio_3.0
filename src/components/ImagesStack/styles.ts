@@ -19,7 +19,7 @@ export const ImageStack = styled(Image, {
   padding: "15px",
 
   "@large": {
-    height: "65px",
+    height: "100%",
   },
 
   "@largex": {

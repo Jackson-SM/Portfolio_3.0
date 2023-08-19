@@ -1,13 +1,16 @@
-import { styled } from "@/config/stitches.config";
+import { styled, theme } from "@/config/stitches.config";
 import Image from "next/image";
+import { lighten, transparentize } from "polished";
 
 export const SectionHero = styled("section", {
   height: "100vh",
   display: "flex",
   justifyContent: "space-around",
 
-  backgroundImage:
-    "radial-gradient(circle at 0% 100%,rgba(0, 255, 164, 0.15) 1%, $background 50%)",
+  backgroundImage: `radial-gradient(circle at 0% 100%,${transparentize(
+    0.8,
+    theme.colors.primary.value,
+  )} 1%, $background 50%)`,
 
   padding: 20,
   paddingTop: "80px",
@@ -61,8 +64,13 @@ export const ContainerSkills = styled("div", {
 
   border: "2px transparent",
   borderRadius: "5px",
-  backgroundImage:
-    "linear-gradient($backgroundLight, $backgroundLight), radial-gradient(circle at top left, $primary, $tertiary)",
+  backgroundImage: `linear-gradient(${lighten(
+    0.2,
+    theme.colors.background.value,
+  )}, ${lighten(
+    0.2,
+    theme.colors.background.value,
+  )}), radial-gradient(circle at top left, $primary, $tertiary)`,
   backgroundOrigin: "border-box",
   backgroundClip: "content-box, border-box",
 
