@@ -1,11 +1,11 @@
 import { styled, theme } from "@/config/stitches.config";
 import Image from "next/image";
-import { lighten, transparentize } from "polished";
+import { transparentize } from "polished";
 
 export const SectionHero = styled("section", {
   height: "100vh",
   display: "flex",
-  justifyContent: "space-around",
+  justifyContent: "start",
 
   backgroundImage: `radial-gradient(circle at 0% 100%,${transparentize(
     0.8,
@@ -25,7 +25,7 @@ export const ContainerAboutMe = styled("div", {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
-  gap: 10,
+  gap: 30,
 
   height: "100%",
 
@@ -40,78 +40,15 @@ export const ImageIllustration = styled(Image, {
   height: 100,
 });
 export const TitleHero = styled("h1", {
-  fontSize: "2.5rem",
+  fontSize: "3.5rem",
 });
 export const DescriptionHero = styled("p", {
   fontSize: "1rem",
   color: "$textDark",
-});
 
-export const ContainerSkills = styled("div", {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  flexDirection: "column",
+  maxWidth: "50%",
 
-  gap: 30,
-  position: "relative",
-  zIndex: 1,
-
-  padding: 2,
-  height: "25%",
-  margin: "auto 0",
-  width: "50%",
-
-  border: "2px transparent",
-  borderRadius: "5px",
-  backgroundImage: `linear-gradient(${lighten(
-    0.2,
-    theme.colors.background.value,
-  )}, ${lighten(
-    0.2,
-    theme.colors.background.value,
-  )}), radial-gradient(circle at top left, $primary, $tertiary)`,
-  backgroundOrigin: "border-box",
-  backgroundClip: "content-box, border-box",
-
-  "@largex": {
-    width: "700px",
-  },
-
-  "@large": {
-    width: "100%",
-  },
-
-  "&::before": {
-    content: "",
-
-    position: "absolute",
-
-    height: "30%",
-    width: "100%",
-
-    //background: "linear-gradient(to bottom, $background, $backgroundLight)",
-
-    top: 0,
-
-    //zIndex: 2,
-
-    //overflow: "hidden",
-  },
-  "&::after": {
-    content: "",
-
-    position: "absolute",
-
-    height: "30%",
-    width: "100%",
-
-    bottom: 0,
-
-    //background: "linear-gradient(to top, $background, $backgroundLight)",
-
-    //zIndex: 1,
-
-    //overflow: "hidden",
-  },
+  "& > span.primary": {},
+  "& > span.secondary": {},
+  "& > span.tertiary": {},
 });

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio Jackson Magalhães</title>
+        <title>Jackson Magalhães</title>
         <meta name="description" content="Portfólio Jackson Magalhães" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
