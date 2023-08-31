@@ -27,6 +27,8 @@ export const ContainerAboutMe = styled("div", {
   justifyContent: "center",
   gap: 30,
 
+  marginLeft: 100,
+
   height: "100%",
 
   "& svg": {

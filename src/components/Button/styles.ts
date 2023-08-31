@@ -23,8 +23,10 @@ export const Button = styled("button", {
   justifyContent: "center",
   gap: 10,
 
+  transition: "all ease 130ms",
+
   defaultVariants: {
-    variant: "outline",
+    variant: "outline_primary",
   },
 
   variants: {
@@ -46,6 +48,19 @@ export const Button = styled("button", {
           )}`,
 
           borderColor: `${lighten(0.4, theme.colors.background.value)}`,
+        },
+      },
+      outline_primary: {
+        background: `${transparentize(1, theme.colors.background.value)}`,
+        border: `1px solid ${lighten(0.2, theme.colors.background.value)}`,
+
+        "&:hover": {
+          background: `${lighten(
+            0.2,
+            transparentize(0.9, theme.colors.primary.value),
+          )}`,
+
+          borderColor: `${lighten(0.1, theme.colors.primary.value)}`,
         },
       },
     },
