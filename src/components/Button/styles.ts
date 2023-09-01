@@ -63,6 +63,32 @@ export const Button = styled("button", {
           borderColor: `${lighten(0.1, theme.colors.primary.value)}`,
         },
       },
+      outline_secondary: {
+        background: `${transparentize(1, theme.colors.background.value)}`,
+        border: `1px solid ${lighten(0.2, theme.colors.background.value)}`,
+
+        "&:hover": {
+          background: `${lighten(
+            0.2,
+            transparentize(0.9, theme.colors.secondary.value),
+          )}`,
+
+          borderColor: `${lighten(0.1, theme.colors.secondary.value)}`,
+        },
+      },
+      outline_tertiary: {
+        background: `${transparentize(1, theme.colors.background.value)}`,
+        border: `1px solid ${lighten(0.2, theme.colors.background.value)}`,
+
+        "&:hover": {
+          background: `${lighten(
+            0.2,
+            transparentize(0.9, theme.colors.tertiary.value),
+          )}`,
+
+          borderColor: `${lighten(0.1, theme.colors.tertiary.value)}`,
+        },
+      },
     },
   },
 });
