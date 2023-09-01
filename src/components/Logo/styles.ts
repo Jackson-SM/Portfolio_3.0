@@ -6,15 +6,16 @@ export const Logo = styled("span", {
 
   display: "flex",
   alignItems: "center",
+  gap: 3,
 
   background: `linear-gradient(to right, $primary, ${lighten(
     0.2,
-    `${theme.colors.primary.value}`,
+    `${theme.colors.secondary.value}`,
   )})`,
   WebkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
 
   "& svg": {
-    color: `${lighten(0.2, `${theme.colors.primary.value}`)}`,
+    color: `${lighten(0.2, `${theme.colors.secondary.value}`)}`,
   },
 });
