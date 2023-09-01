@@ -45,7 +45,7 @@ export const TitleHero = styled("h1", {
   fontSize: "3.5rem",
 });
 export const DescriptionHero = styled("p", {
-  fontSize: "1rem",
+  fontSize: "0.9rem",
   color: "$textDark",
 
   maxWidth: "50%",

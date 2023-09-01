@@ -6,7 +6,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
       colors: {
         primary: "#b03eed",
 
-        secondary: "#ffb121",
+        secondary: "#0356fc",
 
         tertiary: "#ffb121",
 

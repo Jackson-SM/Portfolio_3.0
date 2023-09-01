@@ -1,7 +1,7 @@
 import { styled, theme } from "@/config/stitches.config";
 import { lighten, transparentize } from "polished";
 
-export const Navbar = styled("nav", {
+export const Navbar = styled("header", {
   height: "80px",
 
   background: `${transparentize(
@@ -21,3 +21,5 @@ export const Navbar = styled("nav", {
   backdropFilter: "blur(5px)",
   width: "100%",
 });
+
+export const Links = styled("nav", {});
