@@ -12,6 +12,7 @@ export const Button = styled("button", {
   cursor: "pointer",
 
   color: "$text",
+  textDecoration: "none",
 
   "& svg": {
     width: "20px",

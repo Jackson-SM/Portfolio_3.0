@@ -2,9 +2,10 @@ import React from "react";
 import * as Styled from "./styles";
 import { Poppins } from "next/font/google";
 
-type ButtonProps = React.ComponentProps<typeof Styled.Button> & {
-  as?: string;
-};
+type ButtonProps = React.ComponentProps<typeof Styled.Button> &
+  React.ComponentProps<"a"> & {
+    as?: string;
+  };
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
