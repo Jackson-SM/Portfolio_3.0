@@ -10,7 +10,7 @@ export const Navbar = styled("header", {
   )}`,
 
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "space-around",
   alignItems: "center",
 
   fontWeight: "bold",
@@ -22,4 +22,7 @@ export const Navbar = styled("header", {
   width: "100%",
 });
 
-export const Links = styled("nav", {});
+export const Links = styled("nav", {
+  display: "flex",
+  gap: "10px",
+});
