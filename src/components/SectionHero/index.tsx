@@ -1,7 +1,6 @@
-import React from "react";
-import * as Styled from "./styles";
+import { DownloadSimple, Info } from "@phosphor-icons/react";
 import { Button } from "../Button";
-import { Info, DownloadSimple } from "@phosphor-icons/react";
+import * as Styled from "./styles";
 
 export const SectionHero = () => {
   return (
