@@ -1,4 +1,6 @@
 import { DownloadSimple, Info } from "@phosphor-icons/react";
+import Image from "next/image";
+import illustration from "../../assets/hero_dev2.svg";
 import { Button } from "../Button";
 import * as Styled from "./styles";
 
@@ -30,6 +32,9 @@ export const SectionHero = () => {
           </Button>
         </div>
       </Styled.ContainerAboutMe>
+      <div>
+        <Image src={illustration} alt="" />
+      </div>
     </Styled.SectionHero>
   );
 };
