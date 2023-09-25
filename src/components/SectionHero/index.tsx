@@ -1,7 +1,7 @@
 import { DownloadSimple, Info } from "@phosphor-icons/react";
 import Image from "next/image";
 import illustration from "../../assets/hero_dev2.svg";
-import { Button } from "../Button";
+import { Button, ButtonLink } from "../Button";
 import * as Styled from "./styles";
 
 export const SectionHero = () => {
@@ -24,9 +24,14 @@ export const SectionHero = () => {
           contribuir para o progresso tecnológico.
         </Styled.DescriptionHero>
         <div style={{ display: "flex", gap: 10 }}>
-          <Button>
+          <ButtonLink
+            as="a"
+            href="/resume.pdf"
+            style={{ textDecoration: "none" }}
+            target="_blank"
+          >
             Download CV <DownloadSimple />
-          </Button>
+          </ButtonLink>
           <Button>
             Sobre mim <Info />
           </Button>

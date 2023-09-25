@@ -1,7 +1,8 @@
 import { styled, theme } from "@/config/stitches.config";
+import Linked from "next/link";
 import { lighten, transparentize } from "polished";
 
-export const Button = styled("button", {
+const styleButtons = {
   width: "max-content",
   padding: "12px 17px",
   outline: "none",
@@ -92,4 +93,11 @@ export const Button = styled("button", {
       },
     },
   },
+};
+
+export const Button = styled("button", styleButtons);
+export const Link = styled(Linked, {
+  ...styleButtons,
+  padding: "10px 18px",
+  fontSize: "0.8rem",
 });
