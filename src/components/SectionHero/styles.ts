@@ -74,7 +74,7 @@ export const DescriptionHero = styled("p", {
   fontSize: "0.9rem",
   color: "$textDark",
 
-  maxWidth: "50%",
+  maxWidth: "70%",
 
   "@medium": {
     fontSize: "0.7rem",
