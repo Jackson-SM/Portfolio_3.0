@@ -1,7 +1,7 @@
 import { DownloadSimple, Info } from "@phosphor-icons/react";
 import Image from "next/image";
+import { Button, ButtonLink } from "../../../Button";
 import illustration from "../../assets/hero_dev2.svg";
-import { Button, ButtonLink } from "../Button";
 import * as Styled from "./styles";
 
 export const SectionHero = () => {

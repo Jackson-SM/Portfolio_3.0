@@ -1,11 +1,11 @@
 import { Navbar } from "@/components/Navbar";
-import { SectionHero } from "@/components/pages/Home/SectionHero";
+import { SectionAboutMe } from "@/components/pages/AboutMe/SectionAboutMe";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
-export default function Home() {
+export default function AboutMe() {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className={`${poppins.className}`}>
-        <SectionHero />
+        <SectionAboutMe />
       </main>
     </>
   );
