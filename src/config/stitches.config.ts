@@ -1,18 +1,28 @@
+import {
+  grayDark,
+  purple,
+  ruby,
+  rubyA,
+  rubyDark,
+  whiteA,
+} from "@radix-ui/colors";
 import { createStitches } from "@stitches/react";
 
 export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
   createStitches({
     theme: {
       colors: {
-        primary: "#b03eed",
+        primary: ruby.ruby10,
+        primaryTransparence: rubyA.rubyA4,
+        primaryDark: rubyDark.ruby8,
 
-        secondary: "#0356fc",
+        secondary: purple.purple10,
 
         tertiary: "#ffb121",
 
-        background: "#0d0d0d",
+        background: grayDark.gray2,
 
-        text: "hsl(0, 0%, 95%)",
+        text: whiteA.whiteA10,
         textDark: "hsl(0, 0%, 70%)",
         textDark2: "hsl(0, 0%, 60%)",
       },
