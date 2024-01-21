@@ -6,8 +6,5 @@ export const globalStyles = globalCss({
     padding: 0,
     boxSizing: "border-box",
   },
-  body: {
-    background: "$background",
-    color: "$text",
-  },
+  body: {},
 });
