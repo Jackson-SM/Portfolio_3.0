@@ -1,5 +1,4 @@
-import { styled, theme } from "@/config/stitches.config";
-import { lighten } from "polished";
+import { styled } from "@/config/stitches.config";
 
 export const Logo = styled("span", {
   fontSize: "2rem",
@@ -8,14 +7,11 @@ export const Logo = styled("span", {
   alignItems: "center",
   gap: 3,
 
-  background: `linear-gradient(to right, $primary, ${lighten(
-    0.2,
-    `${theme.colors.secondary.value}`,
-  )})`,
+  background: `linear-gradient(to right, $primary, $secondary)`,
   WebkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
 
   "& svg": {
-    color: `${lighten(0.2, `${theme.colors.secondary.value}`)}`,
+    color: `$primaryDark`,
   },
 });

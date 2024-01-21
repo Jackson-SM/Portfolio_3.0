@@ -2,8 +2,9 @@ import { styled } from "@/config/stitches.config";
 import Linked from "next/link";
 
 export const Link = styled(Linked, {
-  color: "$text",
   fontSize: "0.85rem",
+
+  color: "$text",
 
   textDecoration: "none",
 

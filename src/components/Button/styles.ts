@@ -40,29 +40,23 @@ const styleButtons = {
         background: "$secondary",
       },
       outline: {
-        background: `${transparentize(1, theme.colors.background.value)}`,
-        border: `1px solid ${lighten(0.2, theme.colors.background.value)}`,
+        background: `$primaryTransparence`,
+        border: `1px solid $primary`,
 
         "&:hover": {
-          background: `${lighten(
-            0.2,
-            transparentize(0.8, theme.colors.background.value),
-          )}`,
+          background: `$primaryTransparence`,
 
-          borderColor: `${lighten(0.4, theme.colors.background.value)}`,
+          borderColor: `$primary`,
         },
       },
       outline_primary: {
-        background: `${transparentize(1, theme.colors.background.value)}`,
+        background: `none`,
         border: `1px solid ${lighten(0.2, theme.colors.background.value)}`,
 
         "&:hover": {
-          background: `${lighten(
-            0.2,
-            transparentize(0.9, theme.colors.primary.value),
-          )}`,
+          background: `$primaryTransparence`,
 
-          borderColor: `${lighten(0.1, theme.colors.primary.value)}`,
+          borderColor: `$primaryDark`,
         },
       },
       outline_secondary: {
