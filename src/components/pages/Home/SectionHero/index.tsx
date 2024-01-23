@@ -1,26 +1,37 @@
+import { Letter } from "@/components/Letter/Letter";
 import { DownloadSimple, Info } from "@phosphor-icons/react";
-import { AspectRatio, Box, Flex } from "@radix-ui/themes";
+import { AspectRatio, Box, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import { ButtonLink } from "../../../Button";
-import * as Styled from "./styles";
+import * as Styles from "./styles";
 
 export const SectionHero = () => {
   return (
-    <Styled.SectionHero>
+    <Styles.SectionHero>
       <Flex gap="3" align="center">
         <Box>
-          <Styled.ContainerAboutMe>
-            <Styled.TitleHero>Jackson Magalhães.</Styled.TitleHero>
-            <Styled.DescriptionHero>
-              Eu sou Jackson Magalhães, um entusiasta da tecnologia, apaixonado
-              por aprender e com facilidade de comunicação. Tenho amplo
-              conhecimento em diversas áreas e gosto de enfrentar desafios.
-              Minha experiência inclui desenvolvimento de aplicativos, sistemas
-              e soluções de infraestrutura. Adoro compartilhar conhecimento e
-              estou aberto a parcerias e projetos inovadores. Meu objetivo é
-              continuar evoluindo na carreira e contribuir para o progresso
-              tecnológico.
-            </Styled.DescriptionHero>
+          <Styles.ContainerAboutMe>
+            <Styles.TitleHero>
+              <Text as="p">{"I'm Jackson Magalhães"}</Text>
+              <Letter as="span" gradient>
+                Fullstack
+              </Letter>
+              {" Developer"}.
+            </Styles.TitleHero>
+            <Styles.DescriptionHero>
+              Eu sou Jackson Magalhães, um entusiasta da tecnologia empenhado em
+              transformar conceitos em soluções digitais inovadoras. Minha
+              habilidade abrange o espectro Full-Stack, com expertise em
+              <Letter as="span"> Node.js</Letter>,{" "}
+              <Letter as="span"> C#</Letter>, <Letter as="span"> Java</Letter>,
+              <Letter as="span"> C++</Letter>,{" "}
+              <Letter as="span"> React.js</Letter> e{" "}
+              <Letter as="span"> Vue.js</Letter>. Com uma paixão pela resolução
+              de problemas complexos e pela criação de interfaces dinâmicas,
+              estou comprometido em evoluir constantemente. Junte-se a mim nesta
+              jornada, onde a criatividade encontra a excelência na programação.
+              Vamos construir juntos o futuro digital!
+            </Styles.DescriptionHero>
             <div style={{ display: "flex", gap: 10 }}>
               <ButtonLink
                 href="/resume.pdf"
@@ -33,7 +44,7 @@ export const SectionHero = () => {
                 Sobre mim <Info />
               </ButtonLink>
             </div>
-          </Styled.ContainerAboutMe>
+          </Styles.ContainerAboutMe>
         </Box>
         <Box style={{ width: "500px", minWidth: "30%" }}>
           <AspectRatio ratio={1 / 1}>
@@ -49,6 +60,6 @@ export const SectionHero = () => {
           </AspectRatio>
         </Box>
       </Flex>
-    </Styled.SectionHero>
+    </Styles.SectionHero>
   );
 };

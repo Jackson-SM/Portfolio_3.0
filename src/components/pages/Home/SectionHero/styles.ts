@@ -61,6 +61,10 @@ export const TitleHero = styled("h1", {
   "@medium": {
     fontSize: "2.5rem",
   },
+
+  "& > p": {
+    fontSize: "2.5rem",
+  },
 });
 export const DescriptionHero = styled("p", {
   fontSize: "0.9rem",
@@ -72,8 +76,4 @@ export const DescriptionHero = styled("p", {
     fontSize: "0.7rem",
     maxWidth: "100%",
   },
-
-  "& > span.primary": {},
-  "& > span.secondary": {},
-  "& > span.tertiary": {},
 });
