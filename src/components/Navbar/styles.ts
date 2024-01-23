@@ -26,4 +26,8 @@ export const Navbar = styled("header", {
 export const Links = styled("nav", {
   display: "flex",
   gap: "10px",
+
+  "@large": {
+    display: "none",
+  },
 });

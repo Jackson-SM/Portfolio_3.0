@@ -30,6 +30,7 @@ export const SectionHero = styled("section", {
 
   "@medium": {
     height: "100vh",
+    width: "100%",
   },
 });
 
@@ -48,6 +49,7 @@ export const ContainerAboutMe = styled("div", {
 
   "@large": {
     margin: 0,
+    alignItems: "center",
   },
 });
 
@@ -56,13 +58,13 @@ export const ImageIllustration = styled(Image, {
   height: 100,
 });
 export const TitleHero = styled("h1", {
-  fontSize: "3.5rem",
+  fontSize: "4.5rem",
 
-  "@medium": {
-    fontSize: "2.5rem",
+  "@largex": {
+    fontSize: "3.5rem",
   },
 
-  "& > p": {
+  "@medium": {
     fontSize: "2.5rem",
   },
 });
