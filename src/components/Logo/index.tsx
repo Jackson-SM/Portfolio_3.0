@@ -1,10 +1,9 @@
-import React from "react";
-import * as Styled from "./styles";
 import { FaConnectdevelop } from "react-icons/fa";
+import * as Styled from "./styles";
 
 export const Logo = () => {
   return (
-    <Styled.Logo>
+    <Styled.Logo gradient>
       Jackson
       <FaConnectdevelop />
     </Styled.Logo>
