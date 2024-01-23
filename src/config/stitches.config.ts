@@ -23,7 +23,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
         background: grayDark.gray2,
         backgroundGray: grayDark.gray3,
 
-        text: whiteA.whiteA10,
+        text: whiteA.whiteA12,
         textDark: "hsl(0, 0%, 70%)",
         textDark2: "hsl(0, 0%, 60%)",
       },
