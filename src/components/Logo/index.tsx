@@ -3,7 +3,7 @@ import * as Styled from "./styles";
 
 export const Logo = () => {
   return (
-    <Styled.Logo gradient>
+    <Styled.Logo gradient="primaryToSecondary">
       Jackson
       <FaConnectdevelop />
     </Styled.Logo>
