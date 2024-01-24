@@ -6,8 +6,13 @@ export const LetterStyled = styled(Text, {
 
   variants: {
     gradient: {
-      true: {
+      primaryToSecondary: {
         background: `linear-gradient(to right, $primary, $secondary)`,
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+      },
+      secondaryToPrimary: {
+        background: `linear-gradient(to right, $secondary, $primary)`,
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
       },
