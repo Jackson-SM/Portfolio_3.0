@@ -22,8 +22,11 @@ export const SectionHero = () => {
               />
             }
           </Text>
-          {"Desenvolvedor "}
-          <Letter as="span" gradient>
+          <Letter as="span" gradient="primaryToSecondary">
+            Desenvolvedor
+          </Letter>
+          <Letter as="span" gradient="secondaryToPrimary">
+            {" "}
             Fullstack
           </Letter>
           .
