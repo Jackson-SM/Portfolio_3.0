@@ -1,10 +1,8 @@
 import { styled } from "@/config/stitches.config";
-import Image from "next/image";
 
 export const SectionHero = styled("section", {
   height: "100vh",
   display: "flex",
-  justifyContent: "space-between",
   alignItems: "center",
 
   backgroundImage: `radial-gradient(circle at 0% 100%,$primaryTransparence 1%, $background 50%)`,
@@ -19,13 +17,9 @@ export const SectionHero = styled("section", {
   },
 
   "@large": {
-    flexDirection: "column",
+    flexDirection: "column-reverse",
     alignItems: "center",
     justifyContent: "center",
-
-    "& > div > img": {
-      display: "none",
-    },
   },
 
   "@medium": {
@@ -40,23 +34,12 @@ export const ContainerAboutMe = styled("div", {
   justifyContent: "center",
   gap: 30,
 
-  height: "100%",
-
-  "& svg": {
-    width: 100,
-    height: 100,
-  },
-
   "@large": {
     margin: 0,
     alignItems: "center",
   },
 });
 
-export const ImageIllustration = styled(Image, {
-  width: 100,
-  height: 100,
-});
 export const TitleHero = styled("h1", {
   fontSize: "4.5rem",
 
