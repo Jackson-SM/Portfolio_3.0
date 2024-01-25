@@ -1,9 +1,9 @@
 import { Letter } from "@/components/Letter/Letter";
-import { DownloadSimple, Info } from "@phosphor-icons/react";
+import { Code, DownloadSimple } from "@phosphor-icons/react";
 import { Text } from "@radix-ui/themes";
 import TypewriterComponent from "typewriter-effect";
 import { ButtonLink } from "../../../Button";
-import { ProfilePicture } from "./ProfilePicture/ProfilePicture";
+import { ProfilePicture } from "./components/ProfilePicture/ProfilePicture";
 import * as Styles from "./styles";
 
 export const SectionHero = () => {
@@ -53,7 +53,7 @@ export const SectionHero = () => {
             Download CV <DownloadSimple />
           </ButtonLink>
           <ButtonLink href="/aboutme" target="_blank">
-            Sobre mim <Info />
+            Projetos <Code />
           </ButtonLink>
         </div>
       </Styles.ContainerAboutMe>
