@@ -1,7 +1,7 @@
 import { styled } from "@/config/stitches.config";
-import { Letter } from "../Letter/Letter";
+import { Heading } from "@radix-ui/themes";
 
-export const Logo = styled(Letter, {
+export const Logo = styled(Heading, {
   fontSize: "2rem",
 
   display: "flex",
