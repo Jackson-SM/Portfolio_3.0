@@ -7,6 +7,8 @@ export const SectionHero = styled("section", {
 
   backgroundImage: `radial-gradient(circle at 0% 100%,$primaryTransparence 1%, $background 50%)`,
 
+  overflow: "hidden",
+
   padding: 20,
   paddingTop: "80px",
 

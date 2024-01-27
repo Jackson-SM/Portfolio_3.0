@@ -1,4 +1,13 @@
-import { styled } from "@/config/stitches.config";
+import { keyframes, styled } from "@/config/stitches.config";
+
+const stacksAnimations = keyframes({
+  "0%": {
+    transform: "rotate(0deg)",
+  },
+  "100%": {
+    transform: "rotate(360deg)",
+  },
+});
 
 export const Container = styled("div", {
   display: "flex",
@@ -12,6 +21,7 @@ export const Container = styled("div", {
   boxShadow: "0 0 40px 0 $colors$primaryDark",
 
   borderRadius: "50%",
+  animation: `${stacksAnimations} 20s linear infinite`,
 });
 
 export const ImageIcon = styled("img", {
@@ -25,7 +35,10 @@ export const ImageIcon = styled("img", {
 
   background: "$background",
 
-  boxShadow: "0 0 20px 0 $colors$primaryDark",
+  //boxShadow: "0 0 20px 0 $colors$primaryDark",
+
+  filter: "drop-shadow(0 0 10px $colors$primaryDark) grayscale(80%) blur(2px)",
+  opacity: 0.5,
 
   // filter: "drop-shadow(0 0 10px $colors$primaryDark)",
 });
