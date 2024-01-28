@@ -3,7 +3,9 @@ import { styled } from "@/config/stitches.config";
 export const Navbar = styled("header", {
   height: "80px",
 
-  background: "$backgroundGray",
+  background: "$backgroundTransparence",
+
+  zIndex: 2,
 
   /*   background: `${transparentize(
     0.8,
@@ -19,7 +21,7 @@ export const Navbar = styled("header", {
   padding: "5px",
 
   position: "fixed",
-  backdropFilter: "blur(5px)",
+  backdropFilter: "blur(10px)",
   width: "100%",
 });
 

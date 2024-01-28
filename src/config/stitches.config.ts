@@ -1,4 +1,5 @@
 import {
+  grayA,
   grayDark,
   purple,
   ruby,
@@ -22,6 +23,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
 
         background: grayDark.gray2,
         backgroundGray: grayDark.gray3,
+        backgroundTransparence: grayA.grayA4,
 
         text: whiteA.whiteA12,
         textDark: "hsl(0, 0%, 70%)",

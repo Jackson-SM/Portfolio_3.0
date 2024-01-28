@@ -4,19 +4,15 @@ export const SectionHero = styled("section", {
   height: "100vh",
   display: "flex",
   alignItems: "center",
-
-  backgroundImage: `radial-gradient(circle at 0% 100%,$primaryTransparence 1%, $background 50%)`,
+  position: "relative",
+  zIndex: 1,
 
   overflow: "hidden",
 
+  //background: `radial-gradient(circle at 0% 100%,$primaryTransparence 0%, $background 50%)`,
+
   padding: 20,
   paddingTop: "80px",
-
-  "& > div > img": {
-    "@large": {
-      margin: 0,
-    },
-  },
 
   "@large": {
     flexDirection: "column-reverse",

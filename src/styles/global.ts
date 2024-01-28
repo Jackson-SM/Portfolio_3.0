@@ -10,4 +10,8 @@ export const globalStyles = globalCss({
     color: "$text",
     background: "$background",
   },
+  main: {
+    //background: "$background",
+    background: `radial-gradient(circle at 0% 50%,$primaryTransparence 0%, $background 50%)`,
+  },
 });
