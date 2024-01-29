@@ -1,5 +1,5 @@
-import * as Styles from "./styles";
 import { HeadingTitle } from "@/components/HeadingTitle/Heading";
+import * as Styles from "./styles";
 
 export const SectionExperiences = () => {
   return (

@@ -6,5 +6,7 @@ export const SectionStacks = styled(Section, {
   position: "relative",
   zIndex: "1",
 
+  padding: 30,
+
   //background: `radial-gradient(circle at 0% 0%,$primaryTransparence 0%, $background 50%)`,
 });
