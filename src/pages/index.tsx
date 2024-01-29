@@ -14,6 +14,8 @@ export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
+  console.log(visible);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
