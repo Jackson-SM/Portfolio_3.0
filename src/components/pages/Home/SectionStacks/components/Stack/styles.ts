@@ -1,8 +1,7 @@
 import { styled } from "@/config/stitches.config";
-import { Box } from "@radix-ui/themes";
 import Image from "next/image";
 
-export const Stack = styled(Box, {
+export const Stack = styled("li", {
   background: "$backgroundGray",
 
   height: "60px",

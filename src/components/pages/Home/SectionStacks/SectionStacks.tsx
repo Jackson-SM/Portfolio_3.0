@@ -1,12 +1,27 @@
 import { HeadingTitle } from "@/components/HeadingTitle/Heading";
 import { Letter } from "@/components/Letter/Letter";
+import { keyframes } from "@/config/stitches.config";
 import { Code, Gear, Laptop } from "@phosphor-icons/react";
 import { Box, Button, Flex, Grid, Text } from "@radix-ui/themes";
+import { useState } from "react";
 import { Stack } from "./components/Stack/Stack";
-import { stacksBackend } from "./stacks";
+import { stacksBackend, stacksFrontend, stacksTools } from "./stacks";
 import * as Styles from "./styles";
 
+const animationStacks = keyframes({
+  "0%": {
+    opacity: 0,
+    transform: "translateY(-20px)",
+  },
+  "100%": {
+    opacity: 1,
+    transform: "translateY(0)",
+  },
+});
+
 export const SectionStacks = () => {
+  const [stackList, setStackList] = useState("backend");
+
   return (
     <Styles.SectionStacks>
       <Flex gap="9" align="center" direction="column" justify="center">
@@ -29,13 +44,31 @@ export const SectionStacks = () => {
           </Flex>
         </Box>
         <Flex gap="8" align="center" justify="between">
-          <Button variant="ghost" radius="full" color="gray" size="3">
+          <Button
+            variant="ghost"
+            radius="full"
+            color="gray"
+            size="3"
+            onClick={() => setStackList("backend")}
+          >
             <Code width="22" height="22" /> Back-end
           </Button>
-          <Button variant="ghost" radius="full" color="gray" size="3">
+          <Button
+            variant="ghost"
+            radius="full"
+            color="gray"
+            size="3"
+            onClick={() => setStackList("frontend")}
+          >
             <Laptop width="22" height="22" /> Front-end
           </Button>
-          <Button variant="ghost" radius="full" color="gray" size="3">
+          <Button
+            variant="ghost"
+            radius="full"
+            color="gray"
+            size="3"
+            onClick={() => setStackList("tools")}
+          >
             <Gear width="22" height="22" /> DevOps
           </Button>
         </Flex>
@@ -46,6 +79,7 @@ export const SectionStacks = () => {
           }}
         >
           <Grid
+            asChild
             gap="4"
             columns={{
               initial: "1",
@@ -58,9 +92,50 @@ export const SectionStacks = () => {
             align="center"
             width="auto"
           >
-            {stacksBackend.map((stack) => {
-              return <Stack key={stack.alt} {...stack} />;
-            })}
+            <ul>
+              {stackList == "backend" &&
+                stacksBackend.map((stack, index) => (
+                  <Stack
+                    key={stack.title}
+                    title={stack.title}
+                    src={stack.src}
+                    color={stack.color}
+                    style={{
+                      opacity: 0,
+                      animation: `${animationStacks} 1s ease-in-out forwards`,
+                      animationDelay: `${(index + 1) / 4}s`,
+                    }}
+                  />
+                ))}
+              {stackList == "frontend" &&
+                stacksFrontend.map((stack, index) => (
+                  <Stack
+                    key={stack.title}
+                    title={stack.title}
+                    src={stack.src}
+                    color={stack.color}
+                    style={{
+                      opacity: 0,
+                      animation: `${animationStacks} 1s ease-in-out forwards`,
+                      animationDelay: `${(index + 1) / 4}s`,
+                    }}
+                  />
+                ))}
+              {stackList == "tools" &&
+                stacksTools.map((stack, index) => (
+                  <Stack
+                    key={stack.title}
+                    title={stack.title}
+                    src={stack.src}
+                    color={stack.color}
+                    style={{
+                      opacity: 0,
+                      animation: `${animationStacks} 1s ease-in-out forwards`,
+                      animationDelay: `${(index + 1) / 4}s`,
+                    }}
+                  />
+                ))}
+            </ul>
           </Grid>
         </Box>
       </Flex>
