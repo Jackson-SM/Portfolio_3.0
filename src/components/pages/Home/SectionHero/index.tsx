@@ -1,3 +1,4 @@
+import { HeadingTitle } from "@/components/HeadingTitle/Heading";
 import { Letter } from "@/components/Letter/Letter";
 import { Code, DownloadSimple } from "@phosphor-icons/react";
 import { Text } from "@radix-ui/themes";
@@ -10,7 +11,7 @@ export const SectionHero = () => {
   return (
     <Styles.SectionHero>
       <Styles.ContainerAboutMe>
-        <Styles.TitleHero>
+        <HeadingTitle size="5">
           <Text as="div" color="gray" size={{ initial: "2", md: "6", lg: "8" }}>
             {
               <TypewriterComponent
@@ -30,7 +31,7 @@ export const SectionHero = () => {
             Fullstack
           </Letter>
           .
-        </Styles.TitleHero>
+        </HeadingTitle>
         <Styles.DescriptionHero>
           Eu sou um entusiasta da tecnologia empenhado em transformar conceitos
           em soluções digitais inovadoras. Minha habilidade abrange o espectro
@@ -45,14 +46,10 @@ export const SectionHero = () => {
           construir juntos o futuro digital!
         </Styles.DescriptionHero>
         <div style={{ display: "flex", gap: 10 }}>
-          <ButtonLink
-            href="/resume.pdf"
-            style={{ textDecoration: "none" }}
-            target="_blank"
-          >
+          <ButtonLink href="/resume.pdf" target="_blank">
             Download CV <DownloadSimple />
           </ButtonLink>
-          <ButtonLink href="/aboutme" target="_blank">
+          <ButtonLink href="#">
             Projetos <Code />
           </ButtonLink>
         </div>

@@ -3,6 +3,7 @@ import { Section } from "@radix-ui/themes";
 
 export const SectionStacks = styled(Section, {
   height: "auto",
+  minHeight: "auto",
   position: "relative",
   zIndex: "1",
 

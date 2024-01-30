@@ -38,7 +38,7 @@ export const ContainerAboutMe = styled("div", {
   },
 });
 
-export const TitleHero = styled("h1", {
+export const TitleHero = styled("h2", {
   fontSize: "4.5rem",
 
   "@largex": {

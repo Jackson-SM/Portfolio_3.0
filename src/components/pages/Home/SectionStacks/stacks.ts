@@ -87,6 +87,12 @@ export const stacksBackend = [
     color: purpleA.purpleA3,
   },
   {
+    title: "Twig",
+    src: "/icons-libs-frameworks/twig.svg",
+    alt: "twig",
+    color: greenA.greenA3,
+  },
+  {
     title: "Rust",
     src: "/icons-langs/rust.svg",
     alt: "rust",
