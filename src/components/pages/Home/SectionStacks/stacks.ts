@@ -15,6 +15,7 @@ import {
   sageA,
   skyA,
   slateA,
+  tealA,
   whiteA,
   yellowA,
 } from "@radix-ui/colors";
@@ -108,6 +109,12 @@ export const stacksFrontend = [
     color: skyA.skyA3,
   },
   {
+    title: "Vue",
+    src: "/icons-libs-frameworks/vuejs.svg",
+    alt: "vue",
+    color: tealA.tealA3,
+  },
+  {
     title: "Tailwind CSS",
     src: "/icons-libs-frameworks/tailwindcss.svg",
     alt: "tailwindcss",
@@ -117,7 +124,7 @@ export const stacksFrontend = [
     title: "Bootstrap",
     src: "/icons-libs-frameworks/bootstrap.svg",
     alt: "bootstrap",
-    color: purpleDarkA.purpleA3,
+    color: purpleDarkA.purpleA2,
   },
   {
     title: "Next",
@@ -168,13 +175,19 @@ export const stacksTools = [
     title: "Github",
     src: "/icons-tools/github.svg",
     alt: "github",
-    color: whiteA.whiteA2,
+    color: whiteA.whiteA1,
   },
   {
     title: "VSCode",
     src: "/icons-tools/vscode.svg",
     alt: "vscode",
     color: blueDarkA.blueA2,
+  },
+  {
+    title: "Visual Studio",
+    src: "/icons-tools/visual-studio.svg",
+    alt: "vscode",
+    color: purpleDarkA.purpleA2,
   },
   {
     title: "Linux",

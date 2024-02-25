@@ -10,6 +10,8 @@ const styleButtons = {
   border: "none",
   borderRadius: 3,
 
+  transition: "all ease 130ms",
+
   cursor: "pointer",
 
   color: "$text",
@@ -24,8 +26,6 @@ const styleButtons = {
   alignItems: "center",
   justifyContent: "center",
   gap: 10,
-
-  transition: "all ease 130ms",
 
   defaultVariants: {
     variant: "outline_primary",

@@ -11,10 +11,15 @@ export const ProfilePicture = () => {
         <Image
           src={"/pfp.png"}
           alt="hero"
-          layout="fill"
-          objectFit="cover"
+          width={500}
+          height={500}
+          priority
+          quality={100}
           style={{
             borderRadius: "50%",
+            objectFit: "cover",
+            width: "100%",
+            height: "auto",
           }}
         />
       </AspectRatio>

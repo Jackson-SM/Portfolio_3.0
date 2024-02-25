@@ -18,10 +18,7 @@ export const SectionStacks = () => {
     <Styles.SectionStacks>
       <Flex gap="9" align="center" direction="column" justify="between">
         <DescriptionSectionStacks />
-        <ButtonsOptionsStacks
-          handleStackList={handleStackList}
-          stackList={stackList}
-        />
+        <ButtonsOptionsStacks handleStackList={handleStackList} />
         <StackList stackList={stackList} />
       </Flex>
     </Styles.SectionStacks>
