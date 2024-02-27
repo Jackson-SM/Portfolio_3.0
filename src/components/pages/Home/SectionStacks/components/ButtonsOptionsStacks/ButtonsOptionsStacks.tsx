@@ -57,8 +57,6 @@ export const ButtonsOptionsStacks = ({
     }));
   };
 
-  console.log(lineProperties);
-
   return (
     <Styles.ButtonsOptionsContainer
       css={{

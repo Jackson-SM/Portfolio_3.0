@@ -22,7 +22,6 @@ export default function Home() {
         entries.forEach(({ target, isIntersecting }) => {
           if (target === ref.current) {
             setVisible(isIntersecting);
-            console.log(ref);
           }
         });
       },
