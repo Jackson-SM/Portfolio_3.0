@@ -4,7 +4,7 @@ import * as Styles from "./styles";
 export const SectionCertifications = () => {
   return (
     <Styles.SectionCertifications>
-      <HeadingTitle as="h1">Certifications</HeadingTitle>
+      <HeadingTitle>Certifications</HeadingTitle>
     </Styles.SectionCertifications>
   );
 };
