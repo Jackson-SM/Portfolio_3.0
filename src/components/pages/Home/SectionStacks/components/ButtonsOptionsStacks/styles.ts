@@ -3,6 +3,8 @@ import { styled } from "@/config/stitches.config";
 export const ButtonsOptionsContainer = styled("div", {
   position: "relative",
   display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
   gap: "40px",
 
   zIndex: "1",

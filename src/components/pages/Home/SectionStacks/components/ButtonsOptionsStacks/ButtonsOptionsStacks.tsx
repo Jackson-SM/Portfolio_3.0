@@ -26,15 +26,19 @@ export const ButtonsOptionsStacks = ({
   }[] = [
     {
       stack: "backend",
-      icon: <Code width="22" height="22" />,
+      icon: <Code width="22" height="22" style={{ pointerEvents: "none" }} />,
       string: "Back-end",
     },
     {
       stack: "frontend",
-      icon: <Laptop width="22" height="22" />,
+      icon: <Laptop width="22" height="22" style={{ pointerEvents: "none" }} />,
       string: "Front-end",
     },
-    { stack: "tools", icon: <Gear width="22" height="22" />, string: "Tools" },
+    {
+      stack: "tools",
+      icon: <Gear width="22" height="22" style={{ pointerEvents: "none" }} />,
+      string: "Tools",
+    },
   ];
 
   useEffect(() => {
@@ -50,8 +54,7 @@ export const ButtonsOptionsStacks = ({
 
   const handleLinePosition = (event: MouseEvent<HTMLButtonElement>) => {
     const target = event.target as HTMLButtonElement;
-    setLineProperties((prev) => ({
-      ...prev,
+    setLineProperties(() => ({
       left: target.offsetLeft,
       width: target.offsetWidth,
     }));
@@ -100,7 +103,7 @@ export const ButtonOptionStackCustom = ({
       variant="ghost"
       radius="medium"
       color="gray"
-      size="3"
+      size={{ initial: "2", lg: "4", md: "4", xl: "3", xs: "1", sm: "2" }}
       ref={ref}
       {...props}
       onClick={(event) => {
