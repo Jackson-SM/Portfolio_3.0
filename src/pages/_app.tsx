@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider
       attribute="class"
       themes={themes}
+      enableColorScheme={false}
       value={{
         yellow: yellowTheme.className,
         blue: blueTheme.className,
