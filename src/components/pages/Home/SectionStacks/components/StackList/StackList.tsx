@@ -46,8 +46,8 @@ export const StackList = ({ stackList }: StackListProps) => {
                 color={stack.color}
                 style={{
                   opacity: 0,
-                  animation: `${animationStacks} 1s ease-in-out forwards`,
-                  animationDelay: `${(index + 1) / 4}s`,
+                  animation: `${animationStacks} 0.5s ease-in-out forwards`,
+                  animationDelay: `${(index + 1) / 5}s`,
                 }}
               />
             ))}
@@ -60,8 +60,8 @@ export const StackList = ({ stackList }: StackListProps) => {
                 color={stack.color}
                 style={{
                   opacity: 0,
-                  animation: `${animationStacks} 1s ease-in-out forwards`,
-                  animationDelay: `${(index + 1) / 4}s`,
+                  animation: `${animationStacks} 0.5s ease-in-out forwards`,
+                  animationDelay: `${(index + 1) / 5}s`,
                 }}
               />
             ))}
@@ -74,8 +74,8 @@ export const StackList = ({ stackList }: StackListProps) => {
                 color={stack.color}
                 style={{
                   opacity: 0,
-                  animation: `${animationStacks} 1s ease-in-out forwards`,
-                  animationDelay: `${(index + 1) / 4}s`,
+                  animation: `${animationStacks} 0.5s ease-in-out forwards`,
+                  animationDelay: `${(index + 1) / 5}s`,
                 }}
               />
             ))}

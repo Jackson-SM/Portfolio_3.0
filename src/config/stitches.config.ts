@@ -1,6 +1,7 @@
 import {
   grayA,
   grayDark,
+  grayDarkA,
   purple,
   ruby,
   rubyA,
@@ -22,7 +23,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
         tertiary: "#ffb121",
 
         background: grayDark.gray2,
-        backgroundGray: grayDark.gray3,
+        backgroundGray: grayDarkA.grayA4,
         backgroundTransparence: grayA.grayA4,
 
         text: whiteA.whiteA12,

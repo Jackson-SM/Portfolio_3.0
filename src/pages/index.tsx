@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { SectionCertifications } from "@/components/pages/Home/SectionCertifications/SectionCertifications";
-import { SectionExperiences } from "@/components/pages/Home/SectionExperiences/SectionExperiences";
 import { SectionHero } from "@/components/pages/Home/SectionHero";
 import { SectionProjects } from "@/components/pages/Home/SectionProjects/SectionProjects";
 import { SectionStacks } from "@/components/pages/Home/SectionStacks/SectionStacks";
@@ -53,7 +52,6 @@ export default function Home() {
         <SectionHero />
         <SectionStacks />
         <SectionCertifications />
-        <SectionExperiences />
         <SectionProjects />
       </main>
     </>
