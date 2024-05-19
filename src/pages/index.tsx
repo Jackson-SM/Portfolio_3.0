@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/Navbar";
-import { SectionCertifications } from "@/components/pages/Home/SectionCertifications/SectionCertifications";
 import { SectionHero } from "@/components/pages/Home/SectionHero";
 import { SectionProjects } from "@/components/pages/Home/SectionProjects/SectionProjects";
 import { SectionStacks } from "@/components/pages/Home/SectionStacks/SectionStacks";
@@ -51,7 +50,6 @@ export default function Home() {
       <main className={`${poppins.className}`}>
         <SectionHero />
         <SectionStacks />
-        <SectionCertifications />
         <SectionProjects />
       </main>
     </>

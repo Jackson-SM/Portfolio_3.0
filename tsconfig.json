@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "src/components/pages/Home/SectionCertifications/components/CardCertification"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js", "src/components/pages/Home/SectionCertifications/components/CertificationCard"],
   "exclude": ["node_modules"]
 }
