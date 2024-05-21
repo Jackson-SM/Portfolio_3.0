@@ -23,7 +23,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
         tertiary: "#ffb121",
 
         background: grayDark.gray2,
-        backgroundGray: grayDarkA.grayA4,
+        backgroundGray: grayDarkA.grayA2,
         backgroundTransparence: grayA.grayA4,
 
         text: whiteA.whiteA12,
