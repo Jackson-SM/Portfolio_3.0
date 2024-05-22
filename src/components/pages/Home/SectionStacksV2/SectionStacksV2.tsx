@@ -33,7 +33,7 @@ export const SectionStacksV2 = () => {
         </Text>
       </Flex>
       <Styles.ContentStacksV2>
-        <Grid columns="repeat(4, 1fr)" gap="3" rows="repeat(2, 1fr)">
+        <Grid columns="repeat(4, 1fr)" gap="3" rows="repeat(auto-fill, 1fr)">
           {someStacks.map((stack, index) => (
             <StackV2
               key={index}
