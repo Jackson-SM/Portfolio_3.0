@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { SectionHero } from "@/components/pages/Home/SectionHero";
 import { SectionProjects } from "@/components/pages/Home/SectionProjects/SectionProjects";
-import { SectionStacks } from "@/components/pages/Home/SectionStacks/SectionStacks";
+import { SectionStacksV2 } from "@/components/pages/Home/SectionStacksV2/SectionStacksV2";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
@@ -49,7 +49,7 @@ export default function Home() {
       <Navbar />
       <main className={`${poppins.className}`}>
         <SectionHero />
-        <SectionStacks />
+        <SectionStacksV2 />
         <SectionProjects />
       </main>
     </>

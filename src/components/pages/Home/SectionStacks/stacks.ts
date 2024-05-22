@@ -1,13 +1,36 @@
+import csharpIcon from "@/assets/icons-langs/csharp.svg";
+import cssIcon from "@/assets/icons-langs/css3.svg";
+import htmlIcon from "@/assets/icons-langs/html.svg";
+import javascriptIcon from "@/assets/icons-langs/javascript.svg";
+import nodejsIcon from "@/assets/icons-langs/nodejs.svg";
+import phpIcon from "@/assets/icons-langs/php.svg";
+import pythonIcon from "@/assets/icons-langs/python.svg";
+import typescriptIcon from "@/assets/icons-langs/typescript.svg";
+import bootstrapIcon from "@/assets/icons-libs-frameworks/bootstrap.svg";
+import expressIcon from "@/assets/icons-libs-frameworks/express.svg";
+import nestjsIcon from "@/assets/icons-libs-frameworks/nestjs.svg";
+import nextIcon from "@/assets/icons-libs-frameworks/nextjs.svg";
+import prismaIcon from "@/assets/icons-libs-frameworks/prisma.svg";
+import reactIcon from "@/assets/icons-libs-frameworks/react.svg";
+import supabaseIcon from "@/assets/icons-libs-frameworks/supabase.svg";
+import tailwindIcon from "@/assets/icons-libs-frameworks/tailwindcss.svg";
+import vueIcon from "@/assets/icons-libs-frameworks/vuejs.svg";
+import dockerIcon from "@/assets/icons-tools/docker.svg";
+import gitIcon from "@/assets/icons-tools/git.svg";
+import githubIcon from "@/assets/icons-tools/github.svg";
+import linuxIcon from "@/assets/icons-tools/linux.svg";
+import postgresIcon from "@/assets/icons-tools/postgresql.svg";
+import trelloIcon from "@/assets/icons-tools/trello.svg";
+import visualStudioIcon from "@/assets/icons-tools/visual-studio.svg";
+import viteIcon from "@/assets/icons-tools/vite.svg";
+import vscodeIcon from "@/assets/icons-tools/vscode.svg";
 import {
   blueA,
   blueDarkA,
-  crimsonA,
   cyanA,
   cyanDarkA,
   greenA,
-  irisA,
   jadeA,
-  orangeA,
   plumA,
   purpleA,
   purpleDarkA,
@@ -23,136 +46,112 @@ import {
 export const stacksBackend = [
   {
     title: "Python",
-    src: "/icons-langs/python.svg",
+    src: pythonIcon,
     alt: "python",
     color: yellowA.yellowA2,
   },
   {
     title: "Node",
-    src: "/icons-langs/nodejs.svg",
+    src: nodejsIcon,
     alt: "nodejs",
     color: greenA.greenA3,
   },
   {
     title: "Express",
-    src: "/icons-libs-frameworks/express.svg",
+    src: expressIcon,
     alt: "express",
     color: sageA.sageA5,
   },
   {
     title: "Nest",
-    src: "/icons-libs-frameworks/nestjs.svg",
+    src: nestjsIcon,
     alt: "nestjs",
     color: redA.redA3,
   },
   {
     title: "Prisma",
-    src: "/icons-libs-frameworks/prisma.svg",
+    src: prismaIcon,
     alt: "prisma",
     color: purpleA.purpleA4,
   },
   {
     title: "Supabase",
-    src: "/icons-libs-frameworks/supabase.svg",
+    src: supabaseIcon,
     alt: "supabase",
     color: jadeA.jadeA3,
   },
   {
-    title: "Adonis",
-    src: "/icons-libs-frameworks/adonisjs.svg",
-    alt: "adonis",
-    color: irisA.irisA4,
-  },
-  {
-    title: "Jest",
-    src: "/icons-libs-frameworks/jest.svg",
-    alt: "jest",
-    color: crimsonA.crimsonA3,
-  },
-  {
     title: "CSharp",
-    src: "/icons-langs/csharp.svg",
+    src: csharpIcon,
     alt: "csharp",
     color: plumA.plumA3,
   },
   {
     title: "Typescript",
-    src: "/icons-langs/typescript.svg",
+    src: typescriptIcon,
     alt: "typescript",
     color: cyanA.cyanA3,
   },
   {
     title: "PHP",
-    src: "/icons-langs/php.svg",
+    src: phpIcon,
     alt: "php",
     color: purpleA.purpleA3,
-  },
-  {
-    title: "Twig",
-    src: "/icons-libs-frameworks/twig.svg",
-    alt: "twig",
-    color: greenA.greenA3,
-  },
-  {
-    title: "Rust",
-    src: "/icons-langs/rust.svg",
-    alt: "rust",
-    color: orangeA.orangeA2,
   },
 ];
 
 export const stacksFrontend = [
   {
     title: "React",
-    src: "/icons-libs-frameworks/react.svg",
+    src: reactIcon,
     alt: "reactjs",
     color: skyA.skyA3,
   },
   {
     title: "Vue",
-    src: "/icons-libs-frameworks/vuejs.svg",
+    src: vueIcon,
     alt: "vue",
     color: tealA.tealA3,
   },
   {
     title: "Tailwind CSS",
-    src: "/icons-libs-frameworks/tailwindcss.svg",
+    src: tailwindIcon,
     alt: "tailwindcss",
     color: blueA.blueA3,
   },
   {
     title: "Bootstrap",
-    src: "/icons-libs-frameworks/bootstrap.svg",
+    src: bootstrapIcon,
     alt: "bootstrap",
     color: purpleDarkA.purpleA2,
   },
   {
     title: "Next",
-    src: "/icons-libs-frameworks/nextjs.svg",
+    src: nextIcon,
     alt: "nextjs",
     color: whiteA.whiteA2,
   },
   {
     title: "Javascript",
-    src: "/icons-langs/javascript.svg",
+    src: javascriptIcon,
     alt: "javascript",
     color: yellowA.yellowA2,
   },
   {
     title: "Typescript",
-    src: "/icons-langs/typescript.svg",
+    src: typescriptIcon,
     alt: "typescript",
     color: cyanA.cyanA3,
   },
   {
     title: "CSS",
-    src: "/icons-langs/css3.svg",
+    src: cssIcon,
     alt: "css",
     color: blueA.blueA3,
   },
   {
     title: "HTML",
-    src: "/icons-langs/html.svg",
+    src: htmlIcon,
     alt: "html",
     color: redA.redA3,
   },
@@ -161,55 +160,55 @@ export const stacksFrontend = [
 export const stacksTools = [
   {
     title: "Docker",
-    src: "/icons-tools/docker.svg",
+    src: dockerIcon,
     alt: "docker",
     color: cyanDarkA.cyanA2,
   },
   {
     title: "Git",
-    src: "/icons-tools/git.svg",
+    src: gitIcon,
     alt: "git",
     color: redA.redA3,
   },
   {
     title: "Github",
-    src: "/icons-tools/github.svg",
+    src: githubIcon,
     alt: "github",
     color: whiteA.whiteA1,
   },
   {
     title: "VSCode",
-    src: "/icons-tools/vscode.svg",
+    src: vscodeIcon,
     alt: "vscode",
     color: blueDarkA.blueA2,
   },
   {
     title: "Visual Studio",
-    src: "/icons-tools/visual-studio.svg",
+    src: visualStudioIcon,
     alt: "vscode",
     color: purpleDarkA.purpleA2,
   },
   {
     title: "Linux",
-    src: "/icons-tools/linux.svg",
+    src: linuxIcon,
     alt: "linux",
     color: slateA.slateA7,
   },
   {
     title: "Trello",
-    src: "/icons-tools/trello.svg",
+    src: trelloIcon,
     alt: "trello",
     color: blueDarkA.blueA3,
   },
   {
     title: "Vite",
-    src: "/icons-tools/vite.svg",
+    src: viteIcon,
     alt: "vite",
     color: plumA.plumA3,
   },
   {
     title: "Postgres",
-    src: "/icons-tools/postgresql.svg",
+    src: postgresIcon,
     alt: "postgresql",
     color: skyA.skyA3,
   },

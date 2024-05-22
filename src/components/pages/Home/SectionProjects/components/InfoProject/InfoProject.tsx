@@ -1,14 +1,20 @@
+import { HeadingTitle } from "@/components/HeadingTitle/Heading";
 import { Heading } from "@radix-ui/themes";
+import { Poppins } from "next/font/google";
 import * as Styles from "./styles";
+
+export const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 
 export const InfoProject = () => {
   return (
     <Styles.InfoProjectContainer>
-      <Heading as="h3" size="7">
+      <HeadingTitle as="h3" size="7">
         Detalhes
-      </Heading>
+      </HeadingTitle>
       <div>
-        <h3>Tecnologias e Frameworks</h3>
+        <Heading as="h4" size="5" className={`${poppins.className}`}>
+          Tecnologias e Frameworks
+        </Heading>
         <div>
           <ul>
             <li>React</li>
@@ -18,7 +24,9 @@ export const InfoProject = () => {
         </div>
       </div>
       <div>
-        <div>Descrição</div>
+        <Heading as="h4" size="5" className={`${poppins.className}`}>
+          Descrição
+        </Heading>
         <div>
           <p>
             Projeto desenvolvido para aprimorar minhas habilidades com Next.js,

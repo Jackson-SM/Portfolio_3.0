@@ -11,27 +11,36 @@ export const SectionHero = () => {
   return (
     <Styles.SectionHero>
       <Styles.ContainerAboutMe>
-        <HeadingTitle size="5">
-          <Text as="div" color="gray" size={{ initial: "2", md: "6", lg: "8" }}>
-            {
-              <TypewriterComponent
-                options={{
-                  strings: ["Jackson Magalhães"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            }
-          </Text>
-          <Letter as="span" gradient="primaryToSecondary">
-            Desenvolvedor
-          </Letter>
-          <Letter as="span" gradient="secondaryToPrimary">
-            {" "}
-            Fullstack
-          </Letter>
-          .
-        </HeadingTitle>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <HeadingTitle size="6">
+            <Text
+              as="div"
+              color="gray"
+              size={{ initial: "2", md: "6", lg: "8" }}
+            >
+              {
+                <TypewriterComponent
+                  options={{
+                    strings: ["Jackson Magalhães"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              }
+            </Text>
+          </HeadingTitle>
+          <HeadingTitle asChild size={{ initial: "6", md: "8", lg: "9" }}>
+            <h2 style={{ fontWeight: "bold" }}>
+              <Letter as="span" gradient="primaryToSecondary">
+                Desenvolvedor
+              </Letter>
+              <Letter as="span" gradient="secondaryToPrimary">
+                {" "}
+                Full-Stack
+              </Letter>
+            </h2>
+          </HeadingTitle>
+        </div>
         <Styles.DescriptionHero>
           Eu sou um entusiasta da tecnologia empenhado em transformar conceitos
           em soluções digitais inovadoras. Minha habilidade abrange o espectro

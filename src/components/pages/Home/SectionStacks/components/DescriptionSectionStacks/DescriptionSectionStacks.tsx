@@ -6,7 +6,7 @@ export const DescriptionSectionStacks = () => {
   return (
     <Box width="100%">
       <Flex gap="4" direction="column" align="center">
-        <HeadingTitle size="2" style={{ textAlign: "center" }}>
+        <HeadingTitle size="6" style={{ textAlign: "center" }}>
           Minhas tecnologias de desenvolvimento <Letter>Full-stack</Letter>
         </HeadingTitle>
         <Text
@@ -14,10 +14,8 @@ export const DescriptionSectionStacks = () => {
           style={{ textAlign: "center" }}
           size={{
             initial: "1",
-            xs: "1",
-            sm: "3",
-            md: "4",
-            lg: "5",
+            md: "2",
+            lg: "3",
             xl: "4",
           }}
         >
