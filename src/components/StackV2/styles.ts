@@ -6,9 +6,18 @@ export const StackV2Container = styled("div", {
   padding: "5px 15px",
   borderRadius: 10,
 
-  width: 100,
+  height: "110px",
 
-  background: "$backgroundGray",
+  maxWidth: 110,
+  maxHeight: 110,
 
-  "&:hover": {},
+  width: "100%",
+
+  background: "$card",
+
+  transition: "background ease 0.2s",
+
+  "&:hover": {
+    background: "$cardHover",
+  },
 });

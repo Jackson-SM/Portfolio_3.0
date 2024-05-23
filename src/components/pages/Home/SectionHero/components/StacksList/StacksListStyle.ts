@@ -1,4 +1,5 @@
 import { keyframes, styled } from "@/config/stitches.config";
+import Image from "next/image";
 
 const stacksAnimations = keyframes({
   "0%": {
@@ -22,7 +23,7 @@ export const Container = styled("div", {
   animation: `${stacksAnimations} 20s linear infinite`,
 });
 
-export const ImageIcon = styled("img", {
+export const ImageIcon = styled(Image, {
   position: "absolute",
 
   height: "10%",

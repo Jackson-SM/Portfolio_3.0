@@ -11,5 +11,8 @@ export const ContentStacksV2 = styled("div", {
   position: "relative",
   padding: 20,
 
-  margin: "0 auto",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  gap: 20,
 });

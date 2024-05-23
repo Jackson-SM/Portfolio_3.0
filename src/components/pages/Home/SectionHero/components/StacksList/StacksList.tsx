@@ -1,6 +1,11 @@
 import { keyframes } from "@/config/stitches.config";
 import * as Styles from "./StacksListStyle";
 
+import nodejsIcon from "@/assets/icons-langs/nodejs.svg";
+import nestjsIcon from "@/assets/icons-libs-frameworks/nestjs.svg";
+import reactIcon from "@/assets/icons-libs-frameworks/react.svg";
+import vuejsIcon from "@/assets/icons-libs-frameworks/vuejs.svg";
+
 const stacksAnimations = keyframes({
   "0%": {
     filter:
@@ -17,7 +22,7 @@ export const StacksList = () => {
   return (
     <Styles.Container>
       <Styles.ImageIcon
-        src="/icons-libs-frameworks/nestjs.svg"
+        src={nestjsIcon}
         alt="nestjs"
         style={{
           top: "-5%",
@@ -28,7 +33,7 @@ export const StacksList = () => {
         }}
       />
       <Styles.ImageIcon
-        src="/icons-langs/nodejs.svg"
+        src={nodejsIcon}
         alt="nodejs"
         style={{
           top: "45%",
@@ -39,8 +44,8 @@ export const StacksList = () => {
         }}
       />
       <Styles.ImageIcon
-        src="/icons-langs/python.svg"
-        alt="python"
+        src={vuejsIcon}
+        alt="vuejs"
         style={{
           top: "95%",
           left: "45%",
@@ -50,8 +55,8 @@ export const StacksList = () => {
         }}
       />
       <Styles.ImageIcon
-        src="/icons-libs-frameworks/tailwindcss.svg"
-        alt="tailwind"
+        src={reactIcon}
+        alt="reactjs"
         style={{
           top: "45%",
           left: "-5%",

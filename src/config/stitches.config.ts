@@ -26,6 +26,9 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
         backgroundGray: grayDarkA.grayA2,
         backgroundTransparence: grayA.grayA4,
 
+        card: grayDark.gray3,
+        cardHover: grayDark.gray4,
+
         text: whiteA.whiteA12,
         textDark: "hsl(0, 0%, 70%)",
         textDark2: "hsl(0, 0%, 60%)",

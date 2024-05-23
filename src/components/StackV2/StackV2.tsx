@@ -1,4 +1,4 @@
-import { AspectRatio, Flex, Text } from "@radix-ui/themes";
+import { Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import { StacksProps } from "../types/StackProps";
 import * as Styles from "./styles";
@@ -24,9 +24,7 @@ export const StackV2 = ({
         style={{ height: "100%", padding: 10 }}
         gap="2"
       >
-        <AspectRatio ratio={1 / 1}>
-          <Image src={src} alt={alt} fill={true} />
-        </AspectRatio>
+        <Image src={src} alt={alt} style={{ width: "75%", height: "75%" }} />
         <Text size="2">{title}</Text>
       </Flex>
       {children}
