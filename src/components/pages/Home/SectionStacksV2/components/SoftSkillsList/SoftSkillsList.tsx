@@ -11,26 +11,44 @@ export const SoftSkillsList = () => {
   return (
     <Styles.SoftSkillsList>
       <Styles.SoftSkillsListItem>
-        <Styles.SoftSkillsListItemIcon>
-          <ChatBubbleIcon width={30} height={30} />
+        <Styles.SoftSkillsListItemIcon
+          css={{
+            "&::before": {
+              height: "20px",
+            },
+          }}
+        >
+          <ChatBubbleIcon width={25} height={25} />
         </Styles.SoftSkillsListItemIcon>
         <Text as="span">Comunicação</Text>
       </Styles.SoftSkillsListItem>
       <Styles.SoftSkillsListItem>
-        <Styles.SoftSkillsListItemIcon>
-          <GearIcon width={30} height={30} />
+        <Styles.SoftSkillsListItemIcon
+          css={{
+            "&::before": {
+              height: "20px",
+            },
+          }}
+        >
+          <GearIcon width={25} height={25} />
         </Styles.SoftSkillsListItemIcon>
         <Text as="span">Resolução de Problemas</Text>
       </Styles.SoftSkillsListItem>
       <Styles.SoftSkillsListItem>
-        <Styles.SoftSkillsListItemIcon>
-          <PersonIcon width={30} height={30} />
+        <Styles.SoftSkillsListItemIcon
+          css={{
+            "&::before": {
+              height: "20px",
+            },
+          }}
+        >
+          <PersonIcon width={25} height={25} />
         </Styles.SoftSkillsListItemIcon>
         <Text as="span">Trabalho em Equipe</Text>
       </Styles.SoftSkillsListItem>
       <Styles.SoftSkillsListItem>
         <Styles.SoftSkillsListItemIcon>
-          <MixIcon width={30} height={30} />
+          <MixIcon width={25} height={25} />
         </Styles.SoftSkillsListItemIcon>
         <Text as="span">Adaptabilidade</Text>
       </Styles.SoftSkillsListItem>

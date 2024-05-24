@@ -5,12 +5,12 @@ export const SoftSkillsList = styled("ul", {
 
   display: "flex",
   flexDirection: "column",
-  gap: 10,
+  gap: 20,
 });
 export const SoftSkillsListItem = styled("li", {
   display: "flex",
   alignItems: "center",
-  gap: 5,
+  gap: 15,
 });
 
 // Icon
@@ -19,13 +19,26 @@ export const SoftSkillsListItemIcon = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: 50,
-  height: 50,
+  width: 45,
+  height: 45,
   borderRadius: "10px",
   color: "$primary",
   fontSize: 20,
   zIndex: 1,
 
-  border: "1px solid $primary",
   background: "transparent",
+
+  border: "1px solid $primary",
+
+  "&:before": {
+    content: "",
+    position: "absolute",
+    top: "100%",
+    left: "50%",
+    background: "$primary",
+
+    width: "2px",
+
+    zIndex: -1,
+  },
 });
