@@ -26,7 +26,7 @@ export const SoftSkillsListItemIcon = styled("div", {
   fontSize: 20,
   zIndex: 1,
 
-  background: "transparent",
+  background: "linear-gradient(to top, $primary, transparent 60%)",
 
   border: "1px solid $primary",
 
