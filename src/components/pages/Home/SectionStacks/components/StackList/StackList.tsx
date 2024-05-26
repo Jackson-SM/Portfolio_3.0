@@ -1,5 +1,5 @@
 import { keyframes } from "@/config/stitches.config";
-import { stacksBackend, stacksFrontend, stacksTools } from "@/data/stacks";
+import { stacks } from "@/data/stacks";
 import { Grid } from "@radix-ui/themes";
 import { StackListTypes } from "../../SectionStacks";
 import { Stack } from "../Stack/Stack";
@@ -20,6 +20,10 @@ const animationStacks = keyframes({
 });
 
 export const StackList = ({ stackList }: StackListProps) => {
+  const stacksBackend = stacks.filter((stack) => stack.type === "backend");
+  const stacksFrontend = stacks.filter((stack) => stack.type === "frontend");
+  const stacksTools = stacks.filter((stack) => stack.type === "tools");
+
   return (
     <Styles.StackList>
       <Grid
