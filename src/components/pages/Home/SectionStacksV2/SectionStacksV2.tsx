@@ -1,7 +1,7 @@
 import { HeadingTitle } from "@/components/HeadingTitle/Heading";
 import { Letter } from "@/components/Letter/Letter";
 import { StackV2 } from "@/components/StackV2/StackV2";
-import { Flex, Grid, Text } from "@radix-ui/themes";
+import { Flex, Grid } from "@radix-ui/themes";
 import * as Styles from "./styles";
 
 import csharpIcon from "@/assets/icons-langs/csharp.svg";
@@ -34,13 +34,10 @@ export const SectionStacksV2 = () => {
 
   return (
     <Styles.SectionStacksV2Container>
-      <Flex direction="column" align="center" justify="center" gap="3">
-        <HeadingTitle size="7">
+      <Flex align="center" justify="center" gap="3">
+        <HeadingTitle size="7" style={{ marginBottom: "30px" }}>
           Minhas <Letter>Habilidades</Letter>
         </HeadingTitle>
-        <Text size={{ initial: "2", xs: "2", sm: "3" }}>
-          Tecnologias que eu domino e minhas Soft Skills.
-        </Text>
       </Flex>
       <Styles.ContentStacksV2>
         <Flex direction="column" gap="4" style={{ flex: 1 }}>
