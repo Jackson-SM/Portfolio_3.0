@@ -1,7 +1,7 @@
 import { keyframes } from "@/config/stitches.config";
+import { stacksBackend, stacksFrontend, stacksTools } from "@/data/stacks";
 import { Grid } from "@radix-ui/themes";
 import { StackListTypes } from "../../SectionStacks";
-import { stacksBackend, stacksFrontend, stacksTools } from "../../stacks";
 import { Stack } from "../Stack/Stack";
 import * as Styles from "./styles";
 type StackListProps = {
@@ -44,6 +44,7 @@ export const StackList = ({ stackList }: StackListProps) => {
                 title={stack.title}
                 src={stack.src}
                 color={stack.color}
+                alt={stack.title}
                 style={{
                   opacity: 0,
                   animation: `${animationStacks} 0.5s ease-in-out forwards`,
@@ -58,6 +59,7 @@ export const StackList = ({ stackList }: StackListProps) => {
                 title={stack.title}
                 src={stack.src}
                 color={stack.color}
+                alt={stack.title}
                 style={{
                   opacity: 0,
                   animation: `${animationStacks} 0.5s ease-in-out forwards`,
@@ -72,6 +74,7 @@ export const StackList = ({ stackList }: StackListProps) => {
                 title={stack.title}
                 src={stack.src}
                 color={stack.color}
+                alt={stack.title}
                 style={{
                   opacity: 0,
                   animation: `${animationStacks} 0.5s ease-in-out forwards`,
