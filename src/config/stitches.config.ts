@@ -7,6 +7,7 @@ import {
   rubyA,
   rubyDark,
   whiteA,
+  whiteP3A,
 } from "@radix-ui/colors";
 import { createStitches } from "@stitches/react";
 
@@ -30,8 +31,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
         cardHover: grayDark.gray4,
 
         text: whiteA.whiteA12,
-        textDark: "hsl(0, 0%, 70%)",
-        textDark2: "hsl(0, 0%, 60%)",
+        textDark: whiteP3A.whiteA8,
       },
       fontSizes: {
         1: "12px",
