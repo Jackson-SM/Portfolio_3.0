@@ -24,6 +24,7 @@ import trelloIcon from "@/assets/icons-tools/trello.svg";
 import visualStudioIcon from "@/assets/icons-tools/visual-studio.svg";
 import viteIcon from "@/assets/icons-tools/vite.svg";
 import vscodeIcon from "@/assets/icons-tools/vscode.svg";
+import { StackTypes } from "@/components/types/StackTypes";
 import {
   blueA,
   blueDarkA,
@@ -43,173 +44,194 @@ import {
   yellowA,
 } from "@radix-ui/colors";
 
-export const stacksBackend = [
+export const stacks: StackTypes[] = [
   {
     title: "Python",
     src: pythonIcon,
     alt: "python",
     color: yellowA.yellowA2,
+    type: "backend",
   },
   {
     title: "Node",
     src: nodejsIcon,
     alt: "nodejs",
     color: greenA.greenA3,
+    type: "backend",
   },
   {
     title: "Express",
     src: expressIcon,
     alt: "express",
     color: sageA.sageA5,
+    type: "backend",
   },
   {
     title: "Nest",
     src: nestjsIcon,
     alt: "nestjs",
     color: redA.redA3,
+    type: "backend",
   },
   {
     title: "Prisma",
     src: prismaIcon,
     alt: "prisma",
     color: purpleA.purpleA4,
+    type: "backend",
   },
   {
     title: "Supabase",
     src: supabaseIcon,
     alt: "supabase",
     color: jadeA.jadeA3,
+    type: "backend",
   },
   {
     title: "CSharp",
     src: csharpIcon,
     alt: "csharp",
     color: plumA.plumA3,
+    type: "backend",
   },
   {
     title: "Typescript",
     src: typescriptIcon,
     alt: "typescript",
     color: cyanA.cyanA3,
+    type: "backend",
   },
   {
     title: "PHP",
     src: phpIcon,
     alt: "php",
     color: purpleA.purpleA3,
+    type: "backend",
   },
-];
-
-export const stacksFrontend = [
   {
     title: "React",
     src: reactIcon,
     alt: "reactjs",
     color: skyA.skyA3,
+    type: "frontend",
   },
   {
     title: "Vue",
     src: vueIcon,
     alt: "vue",
     color: tealA.tealA3,
+    type: "frontend",
   },
   {
     title: "Tailwind CSS",
     src: tailwindIcon,
     alt: "tailwindcss",
     color: blueA.blueA3,
+    type: "frontend",
   },
   {
     title: "Bootstrap",
     src: bootstrapIcon,
     alt: "bootstrap",
     color: purpleDarkA.purpleA2,
+    type: "frontend",
   },
   {
     title: "Next",
     src: nextIcon,
     alt: "nextjs",
     color: whiteA.whiteA2,
+    type: "frontend",
   },
   {
     title: "Javascript",
     src: javascriptIcon,
     alt: "javascript",
     color: yellowA.yellowA2,
+    type: "frontend",
   },
   {
     title: "Typescript",
     src: typescriptIcon,
     alt: "typescript",
     color: cyanA.cyanA3,
+    type: "frontend",
   },
   {
     title: "CSS",
     src: cssIcon,
     alt: "css",
     color: blueA.blueA3,
+    type: "frontend",
   },
   {
     title: "HTML",
     src: htmlIcon,
     alt: "html",
     color: redA.redA3,
+    type: "frontend",
   },
-];
-
-export const stacksTools = [
   {
     title: "Docker",
     src: dockerIcon,
     alt: "docker",
     color: cyanDarkA.cyanA2,
+    type: "tools",
   },
   {
     title: "Git",
     src: gitIcon,
     alt: "git",
     color: redA.redA3,
+    type: "tools",
   },
   {
     title: "Github",
     src: githubIcon,
     alt: "github",
     color: whiteA.whiteA1,
+    type: "tools",
   },
   {
     title: "VSCode",
     src: vscodeIcon,
     alt: "vscode",
     color: blueDarkA.blueA2,
+    type: "tools",
   },
   {
     title: "Visual Studio",
     src: visualStudioIcon,
     alt: "vscode",
     color: purpleDarkA.purpleA2,
+    type: "tools",
   },
   {
     title: "Linux",
     src: linuxIcon,
     alt: "linux",
     color: slateA.slateA7,
+    type: "tools",
   },
   {
     title: "Trello",
     src: trelloIcon,
     alt: "trello",
     color: blueDarkA.blueA3,
+    type: "tools",
   },
   {
     title: "Vite",
     src: viteIcon,
     alt: "vite",
     color: plumA.plumA3,
+    type: "tools",
   },
   {
     title: "Postgres",
     src: postgresIcon,
     alt: "postgresql",
     color: skyA.skyA3,
+    type: "tools",
   },
 ];
