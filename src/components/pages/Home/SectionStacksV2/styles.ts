@@ -15,4 +15,9 @@ export const ContentStacksV2 = styled("div", {
   justifyContent: "center",
   alignItems: "center",
   gap: 20,
+
+  "@medium": {
+    flexDirection: "column",
+    gap: 20,
+  },
 });

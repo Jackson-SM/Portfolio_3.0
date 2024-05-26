@@ -39,21 +39,21 @@ export const SectionStacksV2 = () => {
           Minhas <Letter>Habilidades</Letter>
         </HeadingTitle>
         <Text size={{ initial: "2", xs: "2", sm: "3" }}>
-          Tecnologias que eu domino e minhas soft skills.
+          Tecnologias que eu domino e minhas Soft Skills.
         </Text>
       </Flex>
       <Styles.ContentStacksV2>
-        <Flex direction="column" gap="4" style={{ flex: 0.6 }}>
+        <Flex direction="column" gap="4" style={{ flex: 1 }}>
           <DescriptionStacksV2 />
           <div style={{ width: "100%", flex: 0.8 }}>
             <SoftSkillsList />
           </div>
         </Flex>
         <Grid
-          columns="repeat(auto-fill, minmax(105px, 0.3fr))"
+          columns="repeat(auto-fill, minmax(105px, 1fr))"
           gap="3"
-          rows="repeat(auto-fill, 1fr)"
-          style={{ flex: 0.3 }}
+          rows="repeat(2, 1fr)"
+          style={{ flex: 1, width: "100%", padding: 10 }}
         >
           {someStacks.map((stack, index) => (
             <StackV2

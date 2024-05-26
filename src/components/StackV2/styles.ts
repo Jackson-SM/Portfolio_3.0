@@ -11,8 +11,6 @@ export const StackV2Container = styled("div", {
   maxWidth: 110,
   maxHeight: 110,
 
-  width: "100%",
-
   background: "$card",
 
   transition: "background ease 0.2s",
