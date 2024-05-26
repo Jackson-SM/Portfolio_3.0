@@ -51,6 +51,7 @@ export const stacks: StackTypes[] = [
     alt: "python",
     color: yellowA.yellowA2,
     type: "backend",
+    code: "py",
   },
   {
     title: "Node",
@@ -58,6 +59,7 @@ export const stacks: StackTypes[] = [
     alt: "nodejs",
     color: greenA.greenA3,
     type: "backend",
+    code: "node",
   },
   {
     title: "Express",
@@ -65,6 +67,7 @@ export const stacks: StackTypes[] = [
     alt: "express",
     color: sageA.sageA5,
     type: "backend",
+    code: "express",
   },
   {
     title: "Nest",
@@ -72,6 +75,7 @@ export const stacks: StackTypes[] = [
     alt: "nestjs",
     color: redA.redA3,
     type: "backend",
+    code: "nest",
   },
   {
     title: "Prisma",
@@ -79,6 +83,7 @@ export const stacks: StackTypes[] = [
     alt: "prisma",
     color: purpleA.purpleA4,
     type: "backend",
+    code: "prisma",
   },
   {
     title: "Supabase",
@@ -86,6 +91,7 @@ export const stacks: StackTypes[] = [
     alt: "supabase",
     color: jadeA.jadeA3,
     type: "backend",
+    code: "supabase",
   },
   {
     title: "CSharp",
@@ -93,13 +99,7 @@ export const stacks: StackTypes[] = [
     alt: "csharp",
     color: plumA.plumA3,
     type: "backend",
-  },
-  {
-    title: "Typescript",
-    src: typescriptIcon,
-    alt: "typescript",
-    color: cyanA.cyanA3,
-    type: "backend",
+    code: "csharp",
   },
   {
     title: "PHP",
@@ -107,6 +107,7 @@ export const stacks: StackTypes[] = [
     alt: "php",
     color: purpleA.purpleA3,
     type: "backend",
+    code: "php",
   },
   {
     title: "React",
@@ -114,6 +115,7 @@ export const stacks: StackTypes[] = [
     alt: "reactjs",
     color: skyA.skyA3,
     type: "frontend",
+    code: "react",
   },
   {
     title: "Vue",
@@ -121,6 +123,7 @@ export const stacks: StackTypes[] = [
     alt: "vue",
     color: tealA.tealA3,
     type: "frontend",
+    code: "vue",
   },
   {
     title: "Tailwind CSS",
@@ -128,6 +131,7 @@ export const stacks: StackTypes[] = [
     alt: "tailwindcss",
     color: blueA.blueA3,
     type: "frontend",
+    code: "tailwind",
   },
   {
     title: "Bootstrap",
@@ -135,6 +139,7 @@ export const stacks: StackTypes[] = [
     alt: "bootstrap",
     color: purpleDarkA.purpleA2,
     type: "frontend",
+    code: "bootstrap",
   },
   {
     title: "Next",
@@ -142,6 +147,7 @@ export const stacks: StackTypes[] = [
     alt: "nextjs",
     color: whiteA.whiteA2,
     type: "frontend",
+    code: "next",
   },
   {
     title: "Javascript",
@@ -149,6 +155,7 @@ export const stacks: StackTypes[] = [
     alt: "javascript",
     color: yellowA.yellowA2,
     type: "frontend",
+    code: "js",
   },
   {
     title: "Typescript",
@@ -156,6 +163,7 @@ export const stacks: StackTypes[] = [
     alt: "typescript",
     color: cyanA.cyanA3,
     type: "frontend",
+    code: "ts",
   },
   {
     title: "CSS",
@@ -163,6 +171,7 @@ export const stacks: StackTypes[] = [
     alt: "css",
     color: blueA.blueA3,
     type: "frontend",
+    code: "css",
   },
   {
     title: "HTML",
@@ -170,6 +179,7 @@ export const stacks: StackTypes[] = [
     alt: "html",
     color: redA.redA3,
     type: "frontend",
+    code: "html",
   },
   {
     title: "Docker",
@@ -177,6 +187,7 @@ export const stacks: StackTypes[] = [
     alt: "docker",
     color: cyanDarkA.cyanA2,
     type: "tools",
+    code: "docker",
   },
   {
     title: "Git",
@@ -184,6 +195,7 @@ export const stacks: StackTypes[] = [
     alt: "git",
     color: redA.redA3,
     type: "tools",
+    code: "git",
   },
   {
     title: "Github",
@@ -191,6 +203,7 @@ export const stacks: StackTypes[] = [
     alt: "github",
     color: whiteA.whiteA1,
     type: "tools",
+    code: "github",
   },
   {
     title: "VSCode",
@@ -198,6 +211,7 @@ export const stacks: StackTypes[] = [
     alt: "vscode",
     color: blueDarkA.blueA2,
     type: "tools",
+    code: "vscode",
   },
   {
     title: "Visual Studio",
@@ -205,6 +219,7 @@ export const stacks: StackTypes[] = [
     alt: "vscode",
     color: purpleDarkA.purpleA2,
     type: "tools",
+    code: "vs",
   },
   {
     title: "Linux",
@@ -212,6 +227,7 @@ export const stacks: StackTypes[] = [
     alt: "linux",
     color: slateA.slateA7,
     type: "tools",
+    code: "linux",
   },
   {
     title: "Trello",
@@ -219,6 +235,7 @@ export const stacks: StackTypes[] = [
     alt: "trello",
     color: blueDarkA.blueA3,
     type: "tools",
+    code: "trello",
   },
   {
     title: "Vite",
@@ -226,6 +243,7 @@ export const stacks: StackTypes[] = [
     alt: "vite",
     color: plumA.plumA3,
     type: "tools",
+    code: "vite",
   },
   {
     title: "Postgres",
@@ -233,5 +251,6 @@ export const stacks: StackTypes[] = [
     alt: "postgresql",
     color: skyA.skyA3,
     type: "tools",
+    code: "postgres",
   },
 ];

@@ -55,6 +55,7 @@ export const { styled, globalCss, keyframes, theme, createTheme, getCssText } =
     media: {
       small: "(max-width: 400px)",
       medium: "(max-width: 750px)",
+      mediumx: "(max-width: 1024px)",
       large: "(max-width: 1200px)",
       largex: "(max-width: 1366px)",
       largexx: "(max-width: 1600px)",

@@ -2,9 +2,9 @@ import { styled } from "@/config/stitches.config";
 import Image from "next/image";
 
 export const Stack = styled("li", {
-  background: "$backgroundTransparence",
+  background: "$card",
 
-  height: "60px",
+  height: "50px",
   borderRadius: "8px",
 
   margin: "0 auto",
@@ -25,7 +25,7 @@ export const Stack = styled("li", {
   transition: "all ease 130ms",
 
   "&:hover": {
-    background: "$backgroundGray",
+    background: "$cardHover",
   },
 });
 export const StackImage = styled(Image, {

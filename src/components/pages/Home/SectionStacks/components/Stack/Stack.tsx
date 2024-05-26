@@ -1,4 +1,5 @@
 import { StacksProps } from "@/components/types/StackProps";
+import { transparentize } from "polished";
 import * as Styles from "./styles";
 
 type StacksPropsComponent = React.ComponentProps<typeof Styles.Stack> &
@@ -13,7 +14,7 @@ export const Stack = ({ children, ...props }: StacksPropsComponent) => {
       css={{
         "&:hover": {
           [`& ${Styles.StackImage}`]: {
-            boxShadow: `0 5px 20px 0px ${color}`,
+            boxShadow: `0 5px 20px 0px ${transparentize(0.9, color)}`,
           },
         },
       }}
@@ -24,7 +25,7 @@ export const Stack = ({ children, ...props }: StacksPropsComponent) => {
         width={40}
         height={40}
         css={{
-          background: `${color}`,
+          background: `${transparentize(0.9, color)}`,
         }}
       />
       {title}

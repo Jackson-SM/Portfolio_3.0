@@ -92,6 +92,8 @@ const styleButtons = {
 export const Button = styled("button", styleButtons);
 export const Link = styled(Linked, {
   ...styleButtons,
-  padding: "10px 18px",
-  fontSize: "0.8rem",
+  padding: "12px 18px",
+  fontSize: "0.85rem",
+  display: "flex",
+  alignItems: "center",
 });
