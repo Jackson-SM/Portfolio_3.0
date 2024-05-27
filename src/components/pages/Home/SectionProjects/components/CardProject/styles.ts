@@ -1,6 +1,4 @@
 import { styled } from "@/config/stitches.config";
-import { Text } from "@radix-ui/themes";
-import Image from "next/image";
 
 export const CardProjectContainer = styled("div", {
   position: "relative",
@@ -11,37 +9,11 @@ export const CardProjectContainer = styled("div", {
   padding: 10,
   borderRadius: 10,
 
-  "@mediumx": {
-    minWidth: "auto",
-    width: "100%",
-    height: "100%",
-    flexDirection: "column",
-  },
+  maxWidth: 400,
 });
 
-export const CardProjectImageCover = styled(Image, {
-  width: "100%",
-  height: "100%",
-  borderRadius: 10,
-
-  filter: "brightness(0.8)",
-
-  transition: "filter ease 200ms",
-
-  "&:hover": {
-    filter: "brightness(1)",
-  },
-});
-
-// Description
-
-export const CardDescriptionProject = styled("div", {
-  flex: 0.3,
-
+export const CardProjectDescription = styled("div", {
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-between",
-  gap: 20,
-  padding: 20,
+  gap: 10,
 });
-export const TextDescription = styled(Text, {});
