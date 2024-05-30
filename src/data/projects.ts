@@ -16,7 +16,8 @@ export const projects = [
   {
     title: "JK-Company",
     slug: "jk_company",
-    description: "",
+    description:
+      "JK-Company é uma landing page fictícia de uma companhia aérea designada para os clientes que desejam conhecer mais a empresa e seus serviços além de tirar possíveis duvidas com o site.",
     stacks: ["html", "css", "js"],
     coverImg: jkCompanyImg,
     website: "https://jackson-sm.github.io/JK-Company/",
@@ -25,7 +26,8 @@ export const projects = [
   {
     title: "NetunoAcademy",
     slug: "netuno",
-    description: "",
+    description:
+      "NetunoAcademy é um projeto com a finalidade de construir uma aplicação escalável e de fácil manutenção utilizando o framework Nestjs e conceitos como DDD e SOLID.",
     stacks: ["nodejs", "ts", "js"],
     coverImg: defaultImg,
     website: "#",
