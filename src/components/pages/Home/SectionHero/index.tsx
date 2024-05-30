@@ -1,6 +1,7 @@
 import { HeadingTitle } from "@/components/HeadingTitle/Heading";
 import { Letter } from "@/components/Letter/Letter";
 import { DownloadSimple } from "@phosphor-icons/react";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 import { Text } from "@radix-ui/themes";
 import TypewriterComponent from "typewriter-effect";
 import { ButtonLink } from "../../../Button";
@@ -57,6 +58,9 @@ export const SectionHero = () => {
         <div style={{ display: "flex", gap: 10 }}>
           <ButtonLink href="/resume.pdf" target="_blank">
             Download CV <DownloadSimple />
+          </ButtonLink>
+          <ButtonLink href="/aboutme" target="_blank">
+            About me <InfoCircledIcon />
           </ButtonLink>
         </div>
       </Styles.ContainerAboutMe>
