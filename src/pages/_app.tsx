@@ -9,6 +9,7 @@ import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
+import "../styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   globalStyles();

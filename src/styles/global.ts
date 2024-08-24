@@ -15,6 +15,6 @@ export const globalStyles = globalCss({
   },
   main: {
     //background: "$background",
-    background: `radial-gradient(circle at 0% 50%,$primaryTransparence 0%, $background 50%)`,
+    background: `radial-gradient(circle at 0% 40%,$primaryTransparence 0%, $background 50%)`,
   },
 });
