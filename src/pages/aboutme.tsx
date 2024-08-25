@@ -16,14 +16,6 @@ export default function Aboutme() {
       </Head>
       <FloatingDockDemo />
       <main className={`${poppins.className}`}>
-        <h1>About me</h1>
-        <h1>About me</h1>
-        <h1>About me</h1>
-        <h1>About me</h1>
-        <h1>About me</h1>
-        <h1>About me</h1>
-        <h1>About me</h1>
-        <h1>About me</h1>
         <TopicsDemo />
       </main>
     </>
