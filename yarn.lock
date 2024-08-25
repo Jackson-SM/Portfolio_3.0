@@ -1133,6 +1133,18 @@
   dependencies:
     tslib "^2.4.0"
 
+"@tabler/icons-react@^3.12.0":
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.12.0.tgz#6ece4dccd76c0eb0dde34dc4f0cf7330d64d653a"
+  integrity sha512-RnJl3HrCqInuC8JJEUxWuYP4OFNYnY2EUtBqZFSpYatPKY3AnvJBIrShJLHf3fiLPpo6xEYAIoB7Qow93JX0fQ==
+  dependencies:
+    "@tabler/icons" "3.12.0"
+
+"@tabler/icons@3.12.0":
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.12.0.tgz#6de75d6aa7568dc0a9d48f79837f8d4f266af540"
+  integrity sha512-Im37ar/mQkqLb6XUXsU7nOc4/66VB9/3KLuZ+6tUsJKHHNLaDUkYfCTNG3pnGDI03laByxVf5+umSNK2yPTx8A==
+
 "@ts-morph/common@~0.19.0":
   version "0.19.0"
   resolved "https://registry.yarnpkg.com/@ts-morph/common/-/common-0.19.0.tgz#927fcd81d1bbc09c89c4a310a84577fb55f3694e"

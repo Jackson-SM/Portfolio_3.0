@@ -8,13 +8,14 @@ export const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     boxSizing: "border-box",
+    fontFamily: poppins.style.fontFamily,
   },
   body: {
     color: "$text",
-    background: "$background",
+    background: `radial-gradient(circle at 0% 40%,$primaryTransparence 0%, $background 50%)`,
   },
   main: {
     //background: "$background",
-    background: `radial-gradient(circle at 0% 40%,$primaryTransparence 0%, $background 50%)`,
+    position: "relative",
   },
 });
