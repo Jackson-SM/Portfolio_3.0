@@ -37,39 +37,45 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "Nightfall",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "Nightfall é um sistema de chat via Sockets, permitindo a comunicação em tempo real entre múltiplos clientes.",
+    link: "https://github.com/Jackson-SM/Nightfall",
   },
   {
-    title: "Netflix",
+    title: "NetunoAcademy",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "Um projeto com a finalidade de construir uma aplicação escalável e de fácil manutenção utilizando o framework Nestjs e conceitos como DDD e SOLID.",
+    link: "https://github.com/Jackson-SM/NetunoAcademy_API",
   },
   {
-    title: "Google",
+    title: "Ganymede",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Ganymede é uma API de um ECommerce utilizando .NET com Entity Framework e PostgreSQL.",
+    link: "https://github.com/Jackson-SM/Ganymede",
   },
   {
-    title: "Meta",
+    title: "Jupiter",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "Jupiter é uma aplicação desenvolvida em Hapi.js com finalidade de criar um gerenciador de tarefas automatizado.",
+    link: "https://github.com/Jackson-SM/Jupiter_API",
   },
   {
-    title: "Amazon",
+    title: "Password Generator",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "Um gerador de passwords feito em Rust. O Objetivo é criar senhas seguras capazes de escapar de driblar ataques de Brute Force e mante-la seguras de qualquer ameaça.",
+    link: "https://github.com/Jackson-SM/generate_password",
   },
   {
-    title: "Microsoft",
+    title: "FulgurFilmes",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Uma API de catálogo de filmes com opções de autenticação de usuários desenvolvida em AdonisJS.",
+    link: "https://github.com/Jackson-SM/api_fulgurfilmes",
+  },
+  {
+    title: "CRUD Nodejs",
+    description:
+      "API Restful simples utilizando Nodejs com bibliotecas pra manipulação de banco de dados e autenticação.",
+    link: "https://github.com/Jackson-SM/api-crud-node",
   },
 ];
