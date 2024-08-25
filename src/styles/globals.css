@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '@radix-ui/colors/ruby.css';
-@import '@radix-ui/colors/blue.css';
-@import '@radix-ui/colors/yellow.css';
-@import '@radix-ui/colors/tomato.css';
-@import '@radix-ui/colors/jade.css';
-@import '@radix-ui/colors/purple.css';
+@import "@radix-ui/colors/ruby.css";
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/yellow.css";
+@import "@radix-ui/colors/tomato.css";
+@import "@radix-ui/colors/jade.css";
+@import "@radix-ui/colors/purple.css";
 
 @layer base {
   :root {
