@@ -8,6 +8,7 @@
 @import "@radix-ui/colors/tomato.css";
 @import "@radix-ui/colors/jade.css";
 @import "@radix-ui/colors/purple.css";
+@import "@radix-ui/colors/gray-dark.css";
 
 @layer base {
   :root {
@@ -39,14 +40,14 @@
   }
 
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --background: var(--gray-2);
+    --foreground: var(--gray-1);
+    --card: var(--gray-3);
+    --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: var(--ruby-10);
-    --primary-foreground: 24 9.8% 10%;
+    --primary-foreground: var(--ruby-11);
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -66,14 +67,14 @@
   }
 
   .dark.blue {
-    --background: 20 14.3% 4.1%;
+    --background: var(--gray-2);
     --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --card: var(--gray-3);
+    --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: var(--blue-10);
-    --primary-foreground: 24 9.8% 10%;
+    --primary-foreground: var(--blue-11);
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -92,14 +93,14 @@
     --chart-5: 340 75% 55%;
   }
   .dark.yellow {
-    --background: 20 14.3% 4.1%;
+    --background: var(--gray-2);
     --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --card: var(--gray-3);
+    --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: var(--yellow-10);
-    --primary-foreground: 24 9.8% 10%;
+    --primary-foreground: var(--yellow-7);
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -118,14 +119,14 @@
     --chart-5: 340 75% 55%;
   }
   .dark.jade {
-    --background: 20 14.3% 4.1%;
+    --background: var(--gray-2);
     --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --card: var(--gray-3);
+    --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: var(--jade-10);
-    --primary-foreground: 24 9.8% 10%;
+    --primary-foreground: var(--jade-8);
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -144,14 +145,14 @@
     --chart-5: 340 75% 55%;
   }
   .dark.tomato {
-    --background: 20 14.3% 4.1%;
+    --background: var(--gray-2);
     --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --card: var(--gray-3);
+    --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: var(--tomato-10);
-    --primary-foreground: 24 9.8% 10%;
+    --primary-foreground: var(--tomato-9);
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -170,14 +171,14 @@
     --chart-5: 340 75% 55%;
   }
   .dark.purple {
-    --background: 20 14.3% 4.1%;
+    --background: var(--gray-2);
     --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
+    --card: var(--gray-3);
+    --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
     --primary: var(--purple-10);
-    --primary-foreground: 24 9.8% 10%;
+    --primary-foreground: var(--purple-9);
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;

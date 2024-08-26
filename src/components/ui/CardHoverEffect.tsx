@@ -2,16 +2,19 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
+
+type ItemsCard = {
+  title: string;
+  description: string;
+  link: string;
+};
 
 export const HoverEffect = ({
   items,
   className,
 }: {
-  items: {
-    title: string;
-    description: string;
-    link: string;
-  }[];
+  items: ItemsCard[];
   className?: string;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -48,10 +51,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-          </Card>
+          <Card item={item} />
         </Link>
       ))}
     </div>
@@ -61,21 +61,38 @@ export const HoverEffect = ({
 export const Card = ({
   className,
   children,
+  item,
 }: {
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  item: ItemsCard;
 }) => {
   return (
-    <div
-      className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-neutral-900 border border-transparent dark:border-primary group-hover:border-primary relative z-20 transition-all",
-        className,
-      )}
-    >
-      <div className="relative z-50">
-        <div className="p-4">{children}</div>
-      </div>
-    </div>
+    <HoverCard>
+      <HoverCardTrigger asChild>
+        <div
+          className={cn(
+            "rounded-2xl h-full w-full p-4 overflow-hidden bg-card border border-transparent dark:border-primary group-hover:border-primary relative z-20 transition-all",
+            className,
+          )}
+        >
+          <div className="relative z-50">
+            <div className="p-4">
+              <CardTitle className="text-primary-foreground">
+                {item.title}
+              </CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+              {children}
+            </div>
+          </div>
+        </div>
+      </HoverCardTrigger>
+      <HoverCardContent className="shadow-lg shadow-black/[0.3] p-4">
+        <div>
+          <CardTitle className="text-card-foreground">{item.title}</CardTitle>
+        </div>
+      </HoverCardContent>
+    </HoverCard>
   );
 };
 export const CardTitle = ({
@@ -86,9 +103,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-primary font-bold tracking-wide mt-4", className)}>
-      {children}
-    </h4>
+    <h4 className={cn("font-bold tracking-wide", className)}>{children}</h4>
   );
 };
 export const CardDescription = ({
