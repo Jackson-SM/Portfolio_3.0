@@ -115,7 +115,7 @@ export const Header = () => {
           lg: "3",
           xl: "4",
         }}
-        className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-400"
+        className="max-w-2xl text-base md:text-lg mt-8 dark:text-neutral-400"
       >
         Confira alguns dos meus projetos que já estão no ar. Cada um deles foi
         uma oportunidade de colocar em prática o que aprendi, unindo design e

@@ -2,12 +2,20 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "./hover-card";
+import { Step } from "../atoms/Step";
+import {
+  HoverCard,
+  HoverCardArrow,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "./hover-card";
 
-type ItemsCard = {
+export type ItemsCard = {
   title: string;
   description: string;
   link: string;
+  steps: string[];
+  stacks: React.ReactNode[];
 };
 
 export const HoverEffect = ({
@@ -68,7 +76,7 @@ export const Card = ({
   item: ItemsCard;
 }) => {
   return (
-    <HoverCard>
+    <HoverCard openDelay={400}>
       <HoverCardTrigger asChild>
         <div
           className={cn(
@@ -87,10 +95,24 @@ export const Card = ({
           </div>
         </div>
       </HoverCardTrigger>
-      <HoverCardContent className="shadow-lg shadow-black/[0.3] p-4">
-        <div>
+      <HoverCardContent
+        className="shadow-2xl shadow-black/[0.9] p-4 flex flex-col gap-6"
+        side="top"
+      >
+        <div className="flex justify-around">
           <CardTitle className="text-card-foreground">{item.title}</CardTitle>
         </div>
+        <div className="pl-2 flex flex-col gap-1">
+          {item.steps.map((title) => (
+            <Step title={title} key={title} />
+          ))}
+        </div>
+        <div className="flex gap-3 items-center">
+          {item.stacks.map((stack, idx) => (
+            <div key={idx}>{stack}</div>
+          ))}
+        </div>
+        <HoverCardArrow className="fill-gray-600" width={18} height={10} />
       </HoverCardContent>
     </HoverCard>
   );
