@@ -2,8 +2,8 @@ import { FloatingDock } from "@/components/ui/FloatingDock";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
+  IconDownload,
   IconHome,
-  IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
 import { HoverThemeButton } from "../HoverThemeButton/HoverThemeButton";
@@ -26,9 +26,9 @@ export function FloatingDockDemo() {
       href: "#",
     },
     {
-      title: "Components",
+      title: "Resume",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconDownload className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
