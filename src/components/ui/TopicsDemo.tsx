@@ -1,4 +1,5 @@
 import { Topics } from "@/components/ui/Topics";
+import { cn } from "@/lib/utils";
 import { Step } from "../atoms/Step";
 
 export function TopicsDemo() {
@@ -57,28 +58,32 @@ export function TopicsDemo() {
           </p>
           <div className="flex flex-col gap-4">
             <p className="text-sm md:text-lg">
-              Empatia, liberdade e justiça são os princípios que moldam tanto
-              minha vida pessoal quanto profissional. Para mim, a empatia é o
-              alicerce de qualquer solução eficaz — acredito firmemente que
+              <MarkPhrase>Empatia</MarkPhrase>,{" "}
+              <MarkPhrase>liberdade</MarkPhrase> e{" "}
+              <MarkPhrase>justiça</MarkPhrase> são os princípios que moldam
+              tanto minha vida pessoal quanto profissional. Para mim, a empatia
+              é o alicerce de qualquer solução eficaz — acredito firmemente que
               entender as necessidades e perspectivas dos outros é a chave para
               criar tecnologias que realmente façam a diferença. Colocar-se no
               lugar do outro, seja um colega de trabalho, um usuário ou um
               cliente, é um exercício diário que pratico com intenção.
             </p>
             <p className="text-sm md:text-lg">
-              A liberdade é outro valor que considero essencial. A liberdade de
-              criar, experimentar e inovar é o que me impulsiona a cada novo
-              projeto. Essa liberdade me permite explorar diferentes abordagens
-              e encontrar soluções criativas para problemas complexos. Para mim,
-              o processo de programação é uma forma de expressão, onde cada
-              linha de código é uma pequena peça de um quebra-cabeça maior.
+              A <MarkPhrase>liberdade</MarkPhrase> é outro valor que considero
+              essencial. A liberdade de criar, experimentar e inovar é o que me
+              impulsiona a cada novo projeto. Essa liberdade me permite explorar
+              diferentes abordagens e encontrar soluções criativas para
+              problemas complexos. Para mim, o processo de programação é uma
+              forma de expressão, onde cada linha de código é uma pequena peça
+              de um quebra-cabeça maior.
             </p>
             <p className="text-sm md:text-lg">
-              A justiça, por sua vez, é o que guia minhas escolhas e interações.
-              Acredito que o ambiente de trabalho deve ser justo e inclusivo,
-              onde todos têm a oportunidade de crescer e contribuir. Na vida,
-              tento aplicar esse valor em todas as minhas decisões, buscando
-              sempre o equilíbrio e a integridade em tudo o que faço.
+              A <MarkPhrase>justiça</MarkPhrase>, por sua vez, é o que guia
+              minhas escolhas e interações. Acredito que o ambiente de trabalho
+              deve ser justo e inclusivo, onde todos têm a oportunidade de
+              crescer e contribuir. Na vida, tento aplicar esse valor em todas
+              as minhas decisões, buscando sempre o equilíbrio e a integridade
+              em tudo o que faço.
             </p>
           </div>
         </div>
@@ -129,7 +134,7 @@ export function TopicsDemo() {
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-2xl font-normal mb-4">
             Interesses que Alimentam Minha Criatividade
           </p>
-          <div className="mb-8">
+          <div className="flex flex-col gap-3 mb-8">
             <Step title="Musica" />
             <Step title="Tecnologia" />
             <Step title="Livros" />
@@ -182,3 +187,13 @@ export function TopicsDemo() {
     </div>
   );
 }
+
+type MarkPhrase = React.ComponentProps<"span">;
+
+export const MarkPhrase = ({ children, className, ...props }: MarkPhrase) => {
+  return (
+    <span className={cn("text-primary-foreground", className)} {...props}>
+      {children}
+    </span>
+  );
+};

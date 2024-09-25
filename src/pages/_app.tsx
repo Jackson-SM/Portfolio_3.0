@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProviderConfig>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </ThemeProviderConfig>
   );
 }

@@ -56,7 +56,7 @@ export const SectionHero = () => {
           construir juntos o futuro digital!
         </Styles.DescriptionHero>
         <div style={{ display: "flex", gap: 10 }}>
-          <ButtonLink href="/resume.pdf" target="_blank">
+          <ButtonLink href="/" target="_blank">
             Download CV <DownloadSimple />
           </ButtonLink>
           <ButtonLink href="/aboutme" target="_blank">

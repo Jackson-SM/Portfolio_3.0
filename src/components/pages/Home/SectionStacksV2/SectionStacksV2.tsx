@@ -6,10 +6,10 @@ import * as Styles from "./styles";
 
 import csharpIcon from "@/assets/icons-langs/csharp.svg";
 import cssIcon from "@/assets/icons-langs/css3.svg";
-import golangIcon from "@/assets/icons-langs/go.svg";
 import htmlIcon from "@/assets/icons-langs/html.svg";
 import javascriptIcon from "@/assets/icons-langs/javascript.svg";
 import nodeIcon from "@/assets/icons-langs/nodejs.svg";
+import pythonIcon from "@/assets/icons-langs/python.svg";
 import typescriptIcon from "@/assets/icons-langs/typescript.svg";
 import reactIcon from "@/assets/icons-libs-frameworks/react.svg";
 import { StacksProps } from "@/components/types/StackProps";
@@ -22,9 +22,9 @@ export const SectionStacksV2 = () => {
     { title: "Javascript", src: javascriptIcon, alt: "javascript" },
     { title: "React", src: reactIcon, alt: "react" },
     {
-      title: "Golang",
-      src: golangIcon,
-      alt: "golang",
+      title: "Python",
+      src: pythonIcon,
+      alt: "python",
     },
     { title: "Typescript", src: typescriptIcon, alt: "typescript" },
     { title: "HTML", src: htmlIcon, alt: "html" },
