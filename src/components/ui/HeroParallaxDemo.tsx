@@ -38,4 +38,9 @@ export const products: ProductParallax[] = [
     link: "https://jackson-sm.github.io/infinite/",
     thumbnail: infinite,
   },
+  {
+    title: "Infinite",
+    link: "https://jackson-sm.github.io/infinite/",
+    thumbnail: infinite,
+  },
 ];

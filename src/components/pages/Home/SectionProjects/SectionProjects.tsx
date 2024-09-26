@@ -1,12 +1,11 @@
 import { CardHoverEffectDemo } from "@/components/ui/CardHoverEffectDemo";
 import { HeroParallaxDemo } from "@/components/ui/HeroParallaxDemo";
-import * as Styles from "./styles";
 
 export const SectionProjects = () => {
   return (
-    <Styles.SectionProjectContainer>
+    <div className="flex flex-col gap-2">
       <HeroParallaxDemo />
       <CardHoverEffectDemo />
-    </Styles.SectionProjectContainer>
+    </div>
   );
 };
