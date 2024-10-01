@@ -18,7 +18,7 @@
     --card-foreground: 20 14.3% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: var(--ruby-10);
+    --primary: 345.3 82.7% 40.8%;
     --primary-foreground: 60 9.1% 97.8%;
     --secondary: 60 4.8% 95.9%;
     --secondary-foreground: 24 9.8% 10%;
@@ -46,8 +46,8 @@
     --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: var(--ruby-10);
-    --primary-foreground: var(--ruby-11);
+    --primary: 345.3 82.7% 40.8%;
+    --primary-foreground: 346.8 77.2% 49.8%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -73,8 +73,8 @@
     --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: var(--blue-10);
-    --primary-foreground: var(--blue-11);
+    --primary: 224.3 76.3% 48%;
+    --primary-foreground: 221.2 83.2% 53.3%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -99,8 +99,8 @@
     --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: var(--yellow-10);
-    --primary-foreground: var(--yellow-7);
+    --primary: 40.6 96.1% 40.4%;
+    --primary-foreground: 45.4 93.4% 47.5%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -125,8 +125,8 @@
     --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: var(--jade-10);
-    --primary-foreground: var(--jade-8);
+    --primary: 161.4 93.5% 30.4%;
+    --primary-foreground: 160.1 84.1% 39.4%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -151,8 +151,8 @@
     --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: var(--tomato-10);
-    --primary-foreground: var(--tomato-9);
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 84.2% 60.2%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -177,8 +177,8 @@
     --card-foreground: var(--gray-11);
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: var(--purple-10);
-    --primary-foreground: var(--purple-9);
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 262.1 83.3% 57.8%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -204,6 +204,6 @@
   }
 
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth relative;
   }
 }

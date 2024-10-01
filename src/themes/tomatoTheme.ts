@@ -1,9 +1,9 @@
 import { createTheme } from "@/config/stitches.config";
-import { tomato, tomatoA, tomatoDark, yellow } from "@radix-ui/colors";
+import { tomatoA, tomatoDark, yellow } from "@radix-ui/colors";
 
 export default createTheme("tomato", {
   colors: {
-    primary: tomato.tomato10,
+    primary: "hsl(0 72.2% 50.6%)",
     primaryDark: tomatoDark.tomato8,
     primaryTransparence: tomatoA.tomatoA3,
 

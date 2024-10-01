@@ -12,7 +12,8 @@ import {
 } from "@tabler/icons-react";
 import { HeadingTitle } from "../HeadingTitle/Heading";
 import { Letter } from "../Letter/Letter";
-import { HoverEffect, ItemsCard } from "./CardHoverEffect";
+import { ItemsCard } from "../pages/Home/SectionProjects/components/types/ItemsCard";
+import { HoverEffect } from "./CardHoverEffect";
 
 export function CardHoverEffectDemo() {
   return (

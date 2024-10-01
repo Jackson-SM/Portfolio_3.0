@@ -3,20 +3,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 import { Step } from "../atoms/Step";
+import { ItemsCard } from "../pages/Home/SectionProjects/components/types/ItemsCard";
 import {
   HoverCard,
   HoverCardArrow,
   HoverCardContent,
   HoverCardTrigger,
 } from "./hover-card";
-
-export type ItemsCard = {
-  title: string;
-  description: string;
-  link: string;
-  steps: string[];
-  stacks: React.ReactNode[];
-};
 
 export const HoverEffect = ({
   items,

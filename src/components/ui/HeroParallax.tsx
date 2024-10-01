@@ -60,7 +60,7 @@ export const HeroParallax = ({ products }: { products: ProductParallax[] }) => {
   return (
     <div
       ref={ref}
-      className="h-auto p-0 overflow-hidden antialiased relative flex flex-col self-auto [perspective:500px] [transform-style:preserve-3d]"
+      className="h-auto p-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:500px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -75,7 +75,7 @@ export const HeroParallax = ({ products }: { products: ProductParallax[] }) => {
         {rows.map((row, rowIndex) => {
           return (
             <motion.div
-              className={`flex flex-row ${
+              className={`flex flex-row relative ${
                 rowIndex % 2 === 0
                   ? "flex-row-reverse space-x-reverse space-x-10"
                   : "space-x-10"
