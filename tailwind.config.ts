@@ -20,6 +20,7 @@ const config = {
     extend: {
       gridTemplateColumns: {
         "auto-fill-100": "repeat(auto-fill, minmax(250px, 1fr))",
+        "auto-fill-card-stack": "repeat(auto-fill, minmax(100px, 1fr))",
       },
       colors: {
         border: "hsl(var(--border))",
