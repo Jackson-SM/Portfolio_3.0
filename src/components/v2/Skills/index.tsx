@@ -47,7 +47,7 @@ type SkillProps = {
 };
 
 const Skill = ({ stack, index }: SkillProps) => {
-  const animationDelay = `${index * 1.5}s`;
+  const animationDelay = `${index * 0.3}s`;
 
   return (
     <div

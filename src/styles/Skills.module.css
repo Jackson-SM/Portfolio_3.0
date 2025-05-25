@@ -1,17 +1,17 @@
 @keyframes pulseGrayscale {
-  0%, 100% { 
+  0%, 3%, 97%, 100% { 
     filter: grayscale(0.95);
   }
-  50% { 
+  25%, 75% {
     filter: grayscale(0);
   }
 }
 
 @keyframes pulseBackground {
-  0%, 100% {
+  0%, 3%, 97%, 100% {
     opacity: 0.1;
   }
-  50% {
+  25%, 75% {
     opacity: 0.8;
   }
 }
@@ -21,4 +21,7 @@
     pulseGrayscale 8s ease-in-out infinite,
     pulseBackground 8s ease-in-out infinite;
   background-color: hsl(var(--muted));
+  /* Todas as skills começam do mesmo estado */
+  filter: grayscale(0.95);
+  opacity: 0.1;
 } 
