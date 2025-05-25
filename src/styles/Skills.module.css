@@ -1,0 +1,24 @@
+@keyframes pulseGrayscale {
+  0%, 100% { 
+    filter: grayscale(0.95);
+  }
+  50% { 
+    filter: grayscale(0);
+  }
+}
+
+@keyframes pulseBackground {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.skillCard {
+  animation: 
+    pulseGrayscale 8s ease-in-out infinite,
+    pulseBackground 8s ease-in-out infinite;
+  background-color: hsl(var(--muted));
+} 

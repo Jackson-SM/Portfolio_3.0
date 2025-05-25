@@ -1,0 +1,4 @@
+@keyframes pulseGrayscale {
+  0%, 100% { filter: grayscale(0.85); }
+  50% { filter: grayscale(0); }
+} 

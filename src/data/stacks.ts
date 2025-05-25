@@ -126,7 +126,7 @@ export const stacks: StackTypes[] = [
     code: "vue",
   },
   {
-    title: "Tailwind CSS",
+    title: "Tailwind",
     src: tailwindIcon,
     alt: "tailwindcss",
     color: blueA.blueA3,
